@@ -46,8 +46,6 @@ class LoginScreen(private val navController: NavHostController? = null) {
 
     @Composable
     fun login(){
-        //var correo by remember { mutableStateOf("") }
-        //var contrasena by remember { mutableStateOf("") }
 
         val viewModel = viewModel<LoginViewModel>()
         val correo = viewModel.loginViewModel.correo
@@ -126,11 +124,14 @@ class LoginScreen(private val navController: NavHostController? = null) {
             )
 
             Image(
-                painter = painterResource(id = R.drawable.ic_launcher_background),
-                contentDescription = "Auto",
+                painter = painterResource(id = R.drawable.imagenlogin),
+                contentDescription = "imagenLogin",
                 modifier = Modifier
+                    .fillMaxWidth()
                     .offset(y = offsetY.dp)
             )
+
+            Spacer(modifier = Modifier.height(35.dp))
 
             TextField(
                 value = correo,

@@ -16,7 +16,7 @@ fun AppNavigation() {
         startDestination = "login"
     ){
         composable("login"){
-            LoginScreen(navController)
+            LoginScreen(navController).login()
         }
 
         composable("inicio"){
