@@ -2,7 +2,6 @@ package com.example.gamerzone.viewModel
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.gamerzone.models.Juegos
 import com.example.gamerzone.storage.JuegosRepository
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.SharingStarted
