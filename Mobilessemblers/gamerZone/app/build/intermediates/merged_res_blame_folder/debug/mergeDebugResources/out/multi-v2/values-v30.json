@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.example.gamerzone.app-mergeDebugResources-38:/values-v30/values-v30.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\rmuji\\.gradle\\caches\\8.13\\transforms\\b1d7f3c6d5a35964806bab263ff99d44\\transformed\\material3-release\\res\\values-v30\\values-v30.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "72",
+                        "endOffsets": "123"
+                    }
+                }
+            ]
+        }
+    ]
+}
