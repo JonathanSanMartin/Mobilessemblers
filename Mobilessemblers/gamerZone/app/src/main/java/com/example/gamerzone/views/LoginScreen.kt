@@ -136,7 +136,7 @@ class LoginScreen(private val navController: NavHostController? = null) {
             TextField(
                 value = correo,
                 onValueChange = {viewModel.cambiarCorreo(it)},
-                label = {Text("Correo")},
+                label = {Text("Correo electrónico")},
                 modifier = Modifier.fillMaxWidth()
             )
 
