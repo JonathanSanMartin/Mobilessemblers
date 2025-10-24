@@ -1,13 +1,33 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Cetecom\StudioProjects\Mobilessemblers\Mobilessemblers\gamerZone\app\src\main\AndroidManifest.xml:2:1-27:12
-INJECTED from C:\Users\Cetecom\StudioProjects\Mobilessemblers\Mobilessemblers\gamerZone\app\src\main\AndroidManifest.xml:2:1-27:12
-INJECTED from C:\Users\Cetecom\StudioProjects\Mobilessemblers\Mobilessemblers\gamerZone\app\src\main\AndroidManifest.xml:2:1-27:12
-INJECTED from C:\Users\Cetecom\StudioProjects\Mobilessemblers\Mobilessemblers\gamerZone\app\src\main\AndroidManifest.xml:2:1-27:12
+ADDED from C:\Users\Cetecom\AndroidStudioProjects\Mobilessemblers\Mobilessemblers\gamerZone\app\src\main\AndroidManifest.xml:2:1-29:12
+INJECTED from C:\Users\Cetecom\AndroidStudioProjects\Mobilessemblers\Mobilessemblers\gamerZone\app\src\main\AndroidManifest.xml:2:1-29:12
+INJECTED from C:\Users\Cetecom\AndroidStudioProjects\Mobilessemblers\Mobilessemblers\gamerZone\app\src\main\AndroidManifest.xml:2:1-29:12
+INJECTED from C:\Users\Cetecom\AndroidStudioProjects\Mobilessemblers\Mobilessemblers\gamerZone\app\src\main\AndroidManifest.xml:2:1-29:12
 MERGED from [androidx.navigation:navigation-runtime-android:2.9.5] C:\Users\Cetecom\.gradle\caches\8.13\transforms\2a4b008cb2a0608050431e546eb00577\transformed\navigation-runtime-release\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.navigation:navigation-common-android:2.9.5] C:\Users\Cetecom\.gradle\caches\8.13\transforms\34a74faf90c0e51a7a3b148fee01d60c\transformed\navigation-common-release\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.navigation:navigation-compose-android:2.9.5] C:\Users\Cetecom\.gradle\caches\8.13\transforms\a7cdd78c11bc015dc92ebe1c558cf757\transformed\navigation-compose-release\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.camera:camera-video:1.3.0] C:\Users\Cetecom\.gradle\caches\8.13\transforms\9eb67e09412ae8126e2fcd0ccbbf06e0\transformed\camera-video-1.3.0\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.camera:camera-core:1.3.0] C:\Users\Cetecom\.gradle\caches\8.13\transforms\74d7b0ad800b43e22cbfe8ad00797d96\transformed\camera-core-1.3.0\AndroidManifest.xml:17:1-36:12
+MERGED from [androidx.camera:camera-extensions:1.3.0] C:\Users\Cetecom\.gradle\caches\8.13\transforms\d46341353af3d495f00576f5fc636802\transformed\camera-extensions-1.3.0\AndroidManifest.xml:17:1-34:12
+MERGED from [androidx.camera:camera-lifecycle:1.3.0] C:\Users\Cetecom\.gradle\caches\8.13\transforms\ac12ccef516bfce82792ab002ec27c68\transformed\camera-lifecycle-1.3.0\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.camera:camera-camera2:1.3.0] C:\Users\Cetecom\.gradle\caches\8.13\transforms\ac8c5fad58ea59d4589855db8268699d\transformed\camera-camera2-1.3.0\AndroidManifest.xml:17:1-36:12
+MERGED from [androidx.camera:camera-view:1.3.0] C:\Users\Cetecom\.gradle\caches\8.13\transforms\ac407d14383898ddbb66ea06cc20e1e8\transformed\camera-view-1.3.0\AndroidManifest.xml:2:1-7:12
+MERGED from [io.coil-kt:coil-compose:2.4.0] C:\Users\Cetecom\.gradle\caches\8.13\transforms\ff767cebb8e5fc487e2ab195f89763a8\transformed\coil-compose-2.4.0\AndroidManifest.xml:2:1-7:12
+MERGED from [io.coil-kt:coil-compose-base:2.4.0] C:\Users\Cetecom\.gradle\caches\8.13\transforms\3982a5cff1def479e5de6a9799a6b8fb\transformed\coil-compose-base-2.4.0\AndroidManifest.xml:2:1-7:12
+MERGED from [io.coil-kt:coil:2.4.0] C:\Users\Cetecom\.gradle\caches\8.13\transforms\49f15d2ee63c276a7b0cbc4369e543a8\transformed\coil-2.4.0\AndroidManifest.xml:2:1-7:12
+MERGED from [io.coil-kt:coil-base:2.4.0] C:\Users\Cetecom\.gradle\caches\8.13\transforms\6b42904d43de32ca6c9ba9812454957d\transformed\coil-base-2.4.0\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.appcompat:appcompat-resources:1.6.1] C:\Users\Cetecom\.gradle\caches\8.13\transforms\b7cbfe0dca0711e85d735d9204a3caa0\transformed\appcompat-resources-1.6.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.appcompat:appcompat:1.6.1] C:\Users\Cetecom\.gradle\caches\8.13\transforms\5c3ff878f1ea2724555b9cd48e860f8a\transformed\appcompat-1.6.1\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.accompanist:accompanist-drawablepainter:0.30.1] C:\Users\Cetecom\.gradle\caches\8.13\transforms\b2ccb11372dd6a50874d655e2c3e02e9\transformed\accompanist-drawablepainter-0.30.1\AndroidManifest.xml:17:1-25:12
 MERGED from [androidx.compose.material3:material3-android:1.3.0] C:\Users\Cetecom\.gradle\caches\8.13\transforms\b1d7f3c6d5a35964806bab263ff99d44\transformed\material3-release\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\Cetecom\.gradle\caches\8.13\transforms\90d09c497f077a32d57ce724663bf2e7\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\Cetecom\.gradle\caches\8.13\transforms\56a579053f4062dc1f36185ad07b3f9c\transformed\vectordrawable-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\Cetecom\.gradle\caches\8.13\transforms\0859e838a159dd666d0e433b1ada7a2c\transformed\drawerlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.fragment:fragment:1.3.6] C:\Users\Cetecom\.gradle\caches\8.13\transforms\bd5df9db7ad0f2e0a4d35a29adf75262\transformed\fragment-1.3.6\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Cetecom\.gradle\caches\8.13\transforms\328aa3673888dc8a2529f938940a205d\transformed\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\Cetecom\.gradle\caches\8.13\transforms\0eb164bac6675f11f98f96dd2d6650f8\transformed\customview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\Cetecom\.gradle\caches\8.13\transforms\2d83545a7740bdbcd9ccccf98de4bb8b\transformed\loader-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.autofill:autofill:1.0.0] C:\Users\Cetecom\.gradle\caches\8.13\transforms\59f51479b9b5f9ab6f549b74aca62a17\transformed\autofill-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.compose.ui:ui-tooling-data-android:1.9.0] C:\Users\Cetecom\.gradle\caches\8.13\transforms\53702ee909d1dcdc0c3b502645a9080c\transformed\ui-tooling-data\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.compose.ui:ui-tooling-preview-android:1.9.0] C:\Users\Cetecom\.gradle\caches\8.13\transforms\e2b7b9c032fe5bccff97a6d0b174f939\transformed\ui-tooling-preview\AndroidManifest.xml:17:1-22:12
@@ -25,11 +45,11 @@ MERGED from [androidx.compose.ui:ui-geometry-android:1.9.0] C:\Users\Cetecom\.gr
 MERGED from [androidx.compose.ui:ui-test-manifest:1.9.0] C:\Users\Cetecom\.gradle\caches\8.13\transforms\ad7b1affff0d51cec81fef0636be7655\transformed\ui-test-manifest-1.9.0\AndroidManifest.xml:17:1-29:12
 MERGED from [androidx.compose.ui:ui-graphics-android:1.9.0] C:\Users\Cetecom\.gradle\caches\8.13\transforms\be6e87c34be20ee6bc1311b7e96e6798\transformed\ui-graphics-release\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.graphics:graphics-path:1.0.1] C:\Users\Cetecom\.gradle\caches\8.13\transforms\12cb36b8fc9e4c5a90b410020d5b1df3\transformed\graphics-path-1.0.1\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.emoji2:emoji2-views-helper:1.4.0] C:\Users\Cetecom\.gradle\caches\8.13\transforms\0030322307e94ad2348ca1c2f2b2c794\transformed\emoji2-views-helper-1.4.0\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.emoji2:emoji2:1.4.0] C:\Users\Cetecom\.gradle\caches\8.13\transforms\44bcda2ad4c932e966f691bc74d92401\transformed\emoji2-1.4.0\AndroidManifest.xml:17:1-35:12
 MERGED from [androidx.core:core:1.17.0] C:\Users\Cetecom\.gradle\caches\8.13\transforms\23391ff29b252fda0953347f28d91d98\transformed\core-1.17.0\AndroidManifest.xml:17:1-30:12
 MERGED from [androidx.lifecycle:lifecycle-process:2.9.4] C:\Users\Cetecom\.gradle\caches\8.13\transforms\3a1b38be5e3eb6633676d4fcca25fd06\transformed\lifecycle-process-2.9.4\AndroidManifest.xml:17:1-35:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.9.4] C:\Users\Cetecom\.gradle\caches\8.13\transforms\b5e63ff173e5ec316a96f5a1127b0da5\transformed\lifecycle-viewmodel-ktx-2.9.4\AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.9.4] C:\Users\Cetecom\.gradle\caches\8.13\transforms\d9c3e8f99cff74bd94db2f0ac7a6dfd3\transformed\lifecycle-livedata-core-2.9.4\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.savedstate:savedstate-ktx:1.3.1] C:\Users\Cetecom\.gradle\caches\8.13\transforms\13931f82f853f85b98243112dc293e16\transformed\savedstate-ktx-1.3.1\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.savedstate:savedstate-android:1.3.1] C:\Users\Cetecom\.gradle\caches\8.13\transforms\26422be1200f8217ba182fda20b2f3fe\transformed\savedstate-release\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.savedstate:savedstate-compose-android:1.3.1] C:\Users\Cetecom\.gradle\caches\8.13\transforms\641a087cc267fc1a18e4b0bf282e7999\transformed\savedstate-compose-release\AndroidManifest.xml:2:1-7:12
@@ -38,8 +58,12 @@ MERGED from [androidx.compose.runtime:runtime-android:1.9.0] C:\Users\Cetecom\.g
 MERGED from [androidx.compose.runtime:runtime-saveable-android:1.9.0] C:\Users\Cetecom\.gradle\caches\8.13\transforms\688aff9e003a0b50ee0ec1ea92965f05\transformed\runtime-saveable\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.lifecycle:lifecycle-runtime-compose-android:2.9.4] C:\Users\Cetecom\.gradle\caches\8.13\transforms\dd5114d85d06692587605728fe678ef3\transformed\lifecycle-runtime-compose-release\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate-android:2.9.4] C:\Users\Cetecom\.gradle\caches\8.13\transforms\de3022f6e5899225a5d9c729c3dc22b4\transformed\lifecycle-viewmodel-savedstate-release\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.9.4] C:\Users\Cetecom\.gradle\caches\8.13\transforms\1e112ba70a0ef571b6419f6312ee9624\transformed\lifecycle-viewmodel-2.9.4\AndroidManifest.xml:2:1-5:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-android:2.9.4] C:\Users\Cetecom\.gradle\caches\8.13\transforms\ae975dfb75e1a2c2a3f60db5e36f9193\transformed\lifecycle-viewmodel-release\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.9.4] C:\Users\Cetecom\.gradle\caches\8.13\transforms\014e95c778cb839b02414184e3486fa0\transformed\lifecycle-livedata-core-ktx-2.9.4\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.9.4] C:\Users\Cetecom\.gradle\caches\8.13\transforms\d9c3e8f99cff74bd94db2f0ac7a6dfd3\transformed\lifecycle-livedata-core-2.9.4\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-runtime-android:2.9.4] C:\Users\Cetecom\.gradle\caches\8.13\transforms\d845bb3e5be148c7565c0eb5db4770e4\transformed\lifecycle-runtime-release\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.9.4] C:\Users\Cetecom\.gradle\caches\8.13\transforms\bc9a89da503c3454efc6d3877a8039c7\transformed\lifecycle-livedata-2.9.4\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-runtime-ktx-android:2.9.4] C:\Users\Cetecom\.gradle\caches\8.13\transforms\1d70ce0d05ca9e27fdea0084f5c40565\transformed\lifecycle-runtime-ktx\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-compose-android:2.9.4] C:\Users\Cetecom\.gradle\caches\8.13\transforms\4d2228596d11f02bc44bb62b6982cdec\transformed\lifecycle-viewmodel-compose-release\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.compose.material:material-icons-core-android:1.7.0] C:\Users\Cetecom\.gradle\caches\8.13\transforms\43122163c85be5292a94148f1ddf35d4\transformed\material-icons-core-release\AndroidManifest.xml:2:1-7:12
@@ -56,20 +80,36 @@ MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Cetecom\
 MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\Cetecom\.gradle\caches\8.13\transforms\7a98a52b4fa81733c69d75ca5951d4fc\transformed\startup-runtime-1.1.1\AndroidManifest.xml:17:1-33:12
 MERGED from [androidx.tracing:tracing:1.2.0] C:\Users\Cetecom\.gradle\caches\8.13\transforms\b7671539528aa8f77f36ad362133de71\transformed\tracing-1.2.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Cetecom\.gradle\caches\8.13\transforms\b33e717803773a958d17d1ec22c7ca81\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.exifinterface:exifinterface:1.3.6] C:\Users\Cetecom\.gradle\caches\8.13\transforms\f681508c2a31cdbe0279a64b41de2471\transformed\exifinterface-1.3.6\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.arch.core:core-runtime:2.2.0] C:\Users\Cetecom\.gradle\caches\8.13\transforms\3c4989d8236b6985ad7819148a4d4268\transformed\core-runtime-2.2.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Cetecom\.gradle\caches\8.13\transforms\6ee843ff025dc3a74250678f236ad5b8\transformed\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
 	package
-		INJECTED from C:\Users\Cetecom\StudioProjects\Mobilessemblers\Mobilessemblers\gamerZone\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Cetecom\AndroidStudioProjects\Mobilessemblers\Mobilessemblers\gamerZone\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from C:\Users\Cetecom\StudioProjects\Mobilessemblers\Mobilessemblers\gamerZone\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Cetecom\AndroidStudioProjects\Mobilessemblers\Mobilessemblers\gamerZone\app\src\main\AndroidManifest.xml
 	xmlns:tools
-		ADDED from C:\Users\Cetecom\StudioProjects\Mobilessemblers\Mobilessemblers\gamerZone\app\src\main\AndroidManifest.xml:3:5-51
+		ADDED from C:\Users\Cetecom\AndroidStudioProjects\Mobilessemblers\Mobilessemblers\gamerZone\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
-		INJECTED from C:\Users\Cetecom\StudioProjects\Mobilessemblers\Mobilessemblers\gamerZone\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Cetecom\AndroidStudioProjects\Mobilessemblers\Mobilessemblers\gamerZone\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\Users\Cetecom\StudioProjects\Mobilessemblers\Mobilessemblers\gamerZone\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from C:\Users\Cetecom\AndroidStudioProjects\Mobilessemblers\Mobilessemblers\gamerZone\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.CAMERA
+ADDED from C:\Users\Cetecom\AndroidStudioProjects\Mobilessemblers\Mobilessemblers\gamerZone\app\src\main\AndroidManifest.xml:5:5-64
+	android:name
+		ADDED from C:\Users\Cetecom\AndroidStudioProjects\Mobilessemblers\Mobilessemblers\gamerZone\app\src\main\AndroidManifest.xml:5:22-62
+uses-permission#android.permission.VIBRATE
+ADDED from C:\Users\Cetecom\AndroidStudioProjects\Mobilessemblers\Mobilessemblers\gamerZone\app\src\main\AndroidManifest.xml:6:5-66
+	android:name
+		ADDED from C:\Users\Cetecom\AndroidStudioProjects\Mobilessemblers\Mobilessemblers\gamerZone\app\src\main\AndroidManifest.xml:6:22-63
 application
-ADDED from C:\Users\Cetecom\StudioProjects\Mobilessemblers\Mobilessemblers\gamerZone\app\src\main\AndroidManifest.xml:5:5-25:19
-INJECTED from C:\Users\Cetecom\StudioProjects\Mobilessemblers\Mobilessemblers\gamerZone\app\src\main\AndroidManifest.xml:5:5-25:19
+ADDED from C:\Users\Cetecom\AndroidStudioProjects\Mobilessemblers\Mobilessemblers\gamerZone\app\src\main\AndroidManifest.xml:7:5-27:19
+INJECTED from C:\Users\Cetecom\AndroidStudioProjects\Mobilessemblers\Mobilessemblers\gamerZone\app\src\main\AndroidManifest.xml:7:5-27:19
+MERGED from [androidx.camera:camera-core:1.3.0] C:\Users\Cetecom\.gradle\caches\8.13\transforms\74d7b0ad800b43e22cbfe8ad00797d96\transformed\camera-core-1.3.0\AndroidManifest.xml:23:5-34:19
+MERGED from [androidx.camera:camera-core:1.3.0] C:\Users\Cetecom\.gradle\caches\8.13\transforms\74d7b0ad800b43e22cbfe8ad00797d96\transformed\camera-core-1.3.0\AndroidManifest.xml:23:5-34:19
+MERGED from [androidx.camera:camera-extensions:1.3.0] C:\Users\Cetecom\.gradle\caches\8.13\transforms\d46341353af3d495f00576f5fc636802\transformed\camera-extensions-1.3.0\AndroidManifest.xml:28:5-32:19
+MERGED from [androidx.camera:camera-extensions:1.3.0] C:\Users\Cetecom\.gradle\caches\8.13\transforms\d46341353af3d495f00576f5fc636802\transformed\camera-extensions-1.3.0\AndroidManifest.xml:28:5-32:19
+MERGED from [androidx.camera:camera-camera2:1.3.0] C:\Users\Cetecom\.gradle\caches\8.13\transforms\ac8c5fad58ea59d4589855db8268699d\transformed\camera-camera2-1.3.0\AndroidManifest.xml:23:5-34:19
+MERGED from [androidx.camera:camera-camera2:1.3.0] C:\Users\Cetecom\.gradle\caches\8.13\transforms\ac8c5fad58ea59d4589855db8268699d\transformed\camera-camera2-1.3.0\AndroidManifest.xml:23:5-34:19
 MERGED from [androidx.compose.ui:ui-tooling-android:1.9.0] C:\Users\Cetecom\.gradle\caches\8.13\transforms\8e7c8afb7acf8247eeac311575499977\transformed\ui-tooling\AndroidManifest.xml:22:5-26:19
 MERGED from [androidx.compose.ui:ui-tooling-android:1.9.0] C:\Users\Cetecom\.gradle\caches\8.13\transforms\8e7c8afb7acf8247eeac311575499977\transformed\ui-tooling\AndroidManifest.xml:22:5-26:19
 MERGED from [androidx.compose.ui:ui-test-manifest:1.9.0] C:\Users\Cetecom\.gradle\caches\8.13\transforms\ad7b1affff0d51cec81fef0636be7655\transformed\ui-test-manifest-1.9.0\AndroidManifest.xml:22:5-27:19
@@ -87,57 +127,97 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\Cetecom\.gradle\ca
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Cetecom\.gradle\caches\8.13\transforms\b33e717803773a958d17d1ec22c7ca81\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Cetecom\.gradle\caches\8.13\transforms\b33e717803773a958d17d1ec22c7ca81\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
 	android:extractNativeLibs
-		INJECTED from C:\Users\Cetecom\StudioProjects\Mobilessemblers\Mobilessemblers\gamerZone\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Cetecom\AndroidStudioProjects\Mobilessemblers\Mobilessemblers\gamerZone\app\src\main\AndroidManifest.xml
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.17.0] C:\Users\Cetecom\.gradle\caches\8.13\transforms\23391ff29b252fda0953347f28d91d98\transformed\core-1.17.0\AndroidManifest.xml:28:18-86
 	android:supportsRtl
-		ADDED from C:\Users\Cetecom\StudioProjects\Mobilessemblers\Mobilessemblers\gamerZone\app\src\main\AndroidManifest.xml:12:9-35
+		ADDED from C:\Users\Cetecom\AndroidStudioProjects\Mobilessemblers\Mobilessemblers\gamerZone\app\src\main\AndroidManifest.xml:14:9-35
 	android:label
-		ADDED from C:\Users\Cetecom\StudioProjects\Mobilessemblers\Mobilessemblers\gamerZone\app\src\main\AndroidManifest.xml:10:9-41
+		ADDED from C:\Users\Cetecom\AndroidStudioProjects\Mobilessemblers\Mobilessemblers\gamerZone\app\src\main\AndroidManifest.xml:12:9-41
 	android:fullBackupContent
-		ADDED from C:\Users\Cetecom\StudioProjects\Mobilessemblers\Mobilessemblers\gamerZone\app\src\main\AndroidManifest.xml:8:9-54
+		ADDED from C:\Users\Cetecom\AndroidStudioProjects\Mobilessemblers\Mobilessemblers\gamerZone\app\src\main\AndroidManifest.xml:10:9-54
 	android:roundIcon
-		ADDED from C:\Users\Cetecom\StudioProjects\Mobilessemblers\Mobilessemblers\gamerZone\app\src\main\AndroidManifest.xml:11:9-54
+		ADDED from C:\Users\Cetecom\AndroidStudioProjects\Mobilessemblers\Mobilessemblers\gamerZone\app\src\main\AndroidManifest.xml:13:9-54
 	android:icon
-		ADDED from C:\Users\Cetecom\StudioProjects\Mobilessemblers\Mobilessemblers\gamerZone\app\src\main\AndroidManifest.xml:9:9-43
+		ADDED from C:\Users\Cetecom\AndroidStudioProjects\Mobilessemblers\Mobilessemblers\gamerZone\app\src\main\AndroidManifest.xml:11:9-43
 	android:allowBackup
-		ADDED from C:\Users\Cetecom\StudioProjects\Mobilessemblers\Mobilessemblers\gamerZone\app\src\main\AndroidManifest.xml:6:9-35
+		ADDED from C:\Users\Cetecom\AndroidStudioProjects\Mobilessemblers\Mobilessemblers\gamerZone\app\src\main\AndroidManifest.xml:8:9-35
 	android:theme
-		ADDED from C:\Users\Cetecom\StudioProjects\Mobilessemblers\Mobilessemblers\gamerZone\app\src\main\AndroidManifest.xml:13:9-47
+		ADDED from C:\Users\Cetecom\AndroidStudioProjects\Mobilessemblers\Mobilessemblers\gamerZone\app\src\main\AndroidManifest.xml:15:9-47
 	android:dataExtractionRules
-		ADDED from C:\Users\Cetecom\StudioProjects\Mobilessemblers\Mobilessemblers\gamerZone\app\src\main\AndroidManifest.xml:7:9-65
+		ADDED from C:\Users\Cetecom\AndroidStudioProjects\Mobilessemblers\Mobilessemblers\gamerZone\app\src\main\AndroidManifest.xml:9:9-65
 activity#com.example.gamerzone.MainActivity
-ADDED from C:\Users\Cetecom\StudioProjects\Mobilessemblers\Mobilessemblers\gamerZone\app\src\main\AndroidManifest.xml:14:9-24:20
+ADDED from C:\Users\Cetecom\AndroidStudioProjects\Mobilessemblers\Mobilessemblers\gamerZone\app\src\main\AndroidManifest.xml:16:9-26:20
 	android:label
-		ADDED from C:\Users\Cetecom\StudioProjects\Mobilessemblers\Mobilessemblers\gamerZone\app\src\main\AndroidManifest.xml:17:13-45
+		ADDED from C:\Users\Cetecom\AndroidStudioProjects\Mobilessemblers\Mobilessemblers\gamerZone\app\src\main\AndroidManifest.xml:19:13-45
 	android:exported
-		ADDED from C:\Users\Cetecom\StudioProjects\Mobilessemblers\Mobilessemblers\gamerZone\app\src\main\AndroidManifest.xml:16:13-36
+		ADDED from C:\Users\Cetecom\AndroidStudioProjects\Mobilessemblers\Mobilessemblers\gamerZone\app\src\main\AndroidManifest.xml:18:13-36
 	android:theme
-		ADDED from C:\Users\Cetecom\StudioProjects\Mobilessemblers\Mobilessemblers\gamerZone\app\src\main\AndroidManifest.xml:18:13-51
+		ADDED from C:\Users\Cetecom\AndroidStudioProjects\Mobilessemblers\Mobilessemblers\gamerZone\app\src\main\AndroidManifest.xml:20:13-51
 	android:name
-		ADDED from C:\Users\Cetecom\StudioProjects\Mobilessemblers\Mobilessemblers\gamerZone\app\src\main\AndroidManifest.xml:15:13-41
+		ADDED from C:\Users\Cetecom\AndroidStudioProjects\Mobilessemblers\Mobilessemblers\gamerZone\app\src\main\AndroidManifest.xml:17:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\Cetecom\StudioProjects\Mobilessemblers\Mobilessemblers\gamerZone\app\src\main\AndroidManifest.xml:19:13-23:29
+ADDED from C:\Users\Cetecom\AndroidStudioProjects\Mobilessemblers\Mobilessemblers\gamerZone\app\src\main\AndroidManifest.xml:21:13-25:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\Cetecom\StudioProjects\Mobilessemblers\Mobilessemblers\gamerZone\app\src\main\AndroidManifest.xml:20:17-69
+ADDED from C:\Users\Cetecom\AndroidStudioProjects\Mobilessemblers\Mobilessemblers\gamerZone\app\src\main\AndroidManifest.xml:22:17-69
 	android:name
-		ADDED from C:\Users\Cetecom\StudioProjects\Mobilessemblers\Mobilessemblers\gamerZone\app\src\main\AndroidManifest.xml:20:25-66
+		ADDED from C:\Users\Cetecom\AndroidStudioProjects\Mobilessemblers\Mobilessemblers\gamerZone\app\src\main\AndroidManifest.xml:22:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\Cetecom\StudioProjects\Mobilessemblers\Mobilessemblers\gamerZone\app\src\main\AndroidManifest.xml:22:17-77
+ADDED from C:\Users\Cetecom\AndroidStudioProjects\Mobilessemblers\Mobilessemblers\gamerZone\app\src\main\AndroidManifest.xml:24:17-77
 	android:name
-		ADDED from C:\Users\Cetecom\StudioProjects\Mobilessemblers\Mobilessemblers\gamerZone\app\src\main\AndroidManifest.xml:22:27-74
+		ADDED from C:\Users\Cetecom\AndroidStudioProjects\Mobilessemblers\Mobilessemblers\gamerZone\app\src\main\AndroidManifest.xml:24:27-74
 uses-sdk
-INJECTED from C:\Users\Cetecom\StudioProjects\Mobilessemblers\Mobilessemblers\gamerZone\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from C:\Users\Cetecom\StudioProjects\Mobilessemblers\Mobilessemblers\gamerZone\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\Cetecom\StudioProjects\Mobilessemblers\Mobilessemblers\gamerZone\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Cetecom\AndroidStudioProjects\Mobilessemblers\Mobilessemblers\gamerZone\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\Cetecom\AndroidStudioProjects\Mobilessemblers\Mobilessemblers\gamerZone\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Cetecom\AndroidStudioProjects\Mobilessemblers\Mobilessemblers\gamerZone\app\src\main\AndroidManifest.xml
 MERGED from [androidx.navigation:navigation-runtime-android:2.9.5] C:\Users\Cetecom\.gradle\caches\8.13\transforms\2a4b008cb2a0608050431e546eb00577\transformed\navigation-runtime-release\AndroidManifest.xml:20:5-44
 MERGED from [androidx.navigation:navigation-runtime-android:2.9.5] C:\Users\Cetecom\.gradle\caches\8.13\transforms\2a4b008cb2a0608050431e546eb00577\transformed\navigation-runtime-release\AndroidManifest.xml:20:5-44
 MERGED from [androidx.navigation:navigation-common-android:2.9.5] C:\Users\Cetecom\.gradle\caches\8.13\transforms\34a74faf90c0e51a7a3b148fee01d60c\transformed\navigation-common-release\AndroidManifest.xml:20:5-44
 MERGED from [androidx.navigation:navigation-common-android:2.9.5] C:\Users\Cetecom\.gradle\caches\8.13\transforms\34a74faf90c0e51a7a3b148fee01d60c\transformed\navigation-common-release\AndroidManifest.xml:20:5-44
 MERGED from [androidx.navigation:navigation-compose-android:2.9.5] C:\Users\Cetecom\.gradle\caches\8.13\transforms\a7cdd78c11bc015dc92ebe1c558cf757\transformed\navigation-compose-release\AndroidManifest.xml:5:5-44
 MERGED from [androidx.navigation:navigation-compose-android:2.9.5] C:\Users\Cetecom\.gradle\caches\8.13\transforms\a7cdd78c11bc015dc92ebe1c558cf757\transformed\navigation-compose-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.camera:camera-video:1.3.0] C:\Users\Cetecom\.gradle\caches\8.13\transforms\9eb67e09412ae8126e2fcd0ccbbf06e0\transformed\camera-video-1.3.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.camera:camera-video:1.3.0] C:\Users\Cetecom\.gradle\caches\8.13\transforms\9eb67e09412ae8126e2fcd0ccbbf06e0\transformed\camera-video-1.3.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.camera:camera-core:1.3.0] C:\Users\Cetecom\.gradle\caches\8.13\transforms\74d7b0ad800b43e22cbfe8ad00797d96\transformed\camera-core-1.3.0\AndroidManifest.xml:21:5-44
+MERGED from [androidx.camera:camera-core:1.3.0] C:\Users\Cetecom\.gradle\caches\8.13\transforms\74d7b0ad800b43e22cbfe8ad00797d96\transformed\camera-core-1.3.0\AndroidManifest.xml:21:5-44
+MERGED from [androidx.camera:camera-extensions:1.3.0] C:\Users\Cetecom\.gradle\caches\8.13\transforms\d46341353af3d495f00576f5fc636802\transformed\camera-extensions-1.3.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.camera:camera-extensions:1.3.0] C:\Users\Cetecom\.gradle\caches\8.13\transforms\d46341353af3d495f00576f5fc636802\transformed\camera-extensions-1.3.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.camera:camera-lifecycle:1.3.0] C:\Users\Cetecom\.gradle\caches\8.13\transforms\ac12ccef516bfce82792ab002ec27c68\transformed\camera-lifecycle-1.3.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.camera:camera-lifecycle:1.3.0] C:\Users\Cetecom\.gradle\caches\8.13\transforms\ac12ccef516bfce82792ab002ec27c68\transformed\camera-lifecycle-1.3.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.camera:camera-camera2:1.3.0] C:\Users\Cetecom\.gradle\caches\8.13\transforms\ac8c5fad58ea59d4589855db8268699d\transformed\camera-camera2-1.3.0\AndroidManifest.xml:21:5-44
+MERGED from [androidx.camera:camera-camera2:1.3.0] C:\Users\Cetecom\.gradle\caches\8.13\transforms\ac8c5fad58ea59d4589855db8268699d\transformed\camera-camera2-1.3.0\AndroidManifest.xml:21:5-44
+MERGED from [androidx.camera:camera-view:1.3.0] C:\Users\Cetecom\.gradle\caches\8.13\transforms\ac407d14383898ddbb66ea06cc20e1e8\transformed\camera-view-1.3.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.camera:camera-view:1.3.0] C:\Users\Cetecom\.gradle\caches\8.13\transforms\ac407d14383898ddbb66ea06cc20e1e8\transformed\camera-view-1.3.0\AndroidManifest.xml:5:5-44
+MERGED from [io.coil-kt:coil-compose:2.4.0] C:\Users\Cetecom\.gradle\caches\8.13\transforms\ff767cebb8e5fc487e2ab195f89763a8\transformed\coil-compose-2.4.0\AndroidManifest.xml:5:5-44
+MERGED from [io.coil-kt:coil-compose:2.4.0] C:\Users\Cetecom\.gradle\caches\8.13\transforms\ff767cebb8e5fc487e2ab195f89763a8\transformed\coil-compose-2.4.0\AndroidManifest.xml:5:5-44
+MERGED from [io.coil-kt:coil-compose-base:2.4.0] C:\Users\Cetecom\.gradle\caches\8.13\transforms\3982a5cff1def479e5de6a9799a6b8fb\transformed\coil-compose-base-2.4.0\AndroidManifest.xml:5:5-44
+MERGED from [io.coil-kt:coil-compose-base:2.4.0] C:\Users\Cetecom\.gradle\caches\8.13\transforms\3982a5cff1def479e5de6a9799a6b8fb\transformed\coil-compose-base-2.4.0\AndroidManifest.xml:5:5-44
+MERGED from [io.coil-kt:coil:2.4.0] C:\Users\Cetecom\.gradle\caches\8.13\transforms\49f15d2ee63c276a7b0cbc4369e543a8\transformed\coil-2.4.0\AndroidManifest.xml:5:5-44
+MERGED from [io.coil-kt:coil:2.4.0] C:\Users\Cetecom\.gradle\caches\8.13\transforms\49f15d2ee63c276a7b0cbc4369e543a8\transformed\coil-2.4.0\AndroidManifest.xml:5:5-44
+MERGED from [io.coil-kt:coil-base:2.4.0] C:\Users\Cetecom\.gradle\caches\8.13\transforms\6b42904d43de32ca6c9ba9812454957d\transformed\coil-base-2.4.0\AndroidManifest.xml:5:5-44
+MERGED from [io.coil-kt:coil-base:2.4.0] C:\Users\Cetecom\.gradle\caches\8.13\transforms\6b42904d43de32ca6c9ba9812454957d\transformed\coil-base-2.4.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.appcompat:appcompat-resources:1.6.1] C:\Users\Cetecom\.gradle\caches\8.13\transforms\b7cbfe0dca0711e85d735d9204a3caa0\transformed\appcompat-resources-1.6.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat-resources:1.6.1] C:\Users\Cetecom\.gradle\caches\8.13\transforms\b7cbfe0dca0711e85d735d9204a3caa0\transformed\appcompat-resources-1.6.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.6.1] C:\Users\Cetecom\.gradle\caches\8.13\transforms\5c3ff878f1ea2724555b9cd48e860f8a\transformed\appcompat-1.6.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.6.1] C:\Users\Cetecom\.gradle\caches\8.13\transforms\5c3ff878f1ea2724555b9cd48e860f8a\transformed\appcompat-1.6.1\AndroidManifest.xml:20:5-44
+MERGED from [com.google.accompanist:accompanist-drawablepainter:0.30.1] C:\Users\Cetecom\.gradle\caches\8.13\transforms\b2ccb11372dd6a50874d655e2c3e02e9\transformed\accompanist-drawablepainter-0.30.1\AndroidManifest.xml:21:5-23:42
+MERGED from [com.google.accompanist:accompanist-drawablepainter:0.30.1] C:\Users\Cetecom\.gradle\caches\8.13\transforms\b2ccb11372dd6a50874d655e2c3e02e9\transformed\accompanist-drawablepainter-0.30.1\AndroidManifest.xml:21:5-23:42
 MERGED from [androidx.compose.material3:material3-android:1.3.0] C:\Users\Cetecom\.gradle\caches\8.13\transforms\b1d7f3c6d5a35964806bab263ff99d44\transformed\material3-release\AndroidManifest.xml:20:5-44
 MERGED from [androidx.compose.material3:material3-android:1.3.0] C:\Users\Cetecom\.gradle\caches\8.13\transforms\b1d7f3c6d5a35964806bab263ff99d44\transformed\material3-release\AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\Cetecom\.gradle\caches\8.13\transforms\90d09c497f077a32d57ce724663bf2e7\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\Cetecom\.gradle\caches\8.13\transforms\90d09c497f077a32d57ce724663bf2e7\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\Cetecom\.gradle\caches\8.13\transforms\56a579053f4062dc1f36185ad07b3f9c\transformed\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\Cetecom\.gradle\caches\8.13\transforms\56a579053f4062dc1f36185ad07b3f9c\transformed\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\Cetecom\.gradle\caches\8.13\transforms\0859e838a159dd666d0e433b1ada7a2c\transformed\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\Cetecom\.gradle\caches\8.13\transforms\0859e838a159dd666d0e433b1ada7a2c\transformed\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.3.6] C:\Users\Cetecom\.gradle\caches\8.13\transforms\bd5df9db7ad0f2e0a4d35a29adf75262\transformed\fragment-1.3.6\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.3.6] C:\Users\Cetecom\.gradle\caches\8.13\transforms\bd5df9db7ad0f2e0a4d35a29adf75262\transformed\fragment-1.3.6\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Cetecom\.gradle\caches\8.13\transforms\328aa3673888dc8a2529f938940a205d\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Cetecom\.gradle\caches\8.13\transforms\328aa3673888dc8a2529f938940a205d\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\Cetecom\.gradle\caches\8.13\transforms\0eb164bac6675f11f98f96dd2d6650f8\transformed\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\Cetecom\.gradle\caches\8.13\transforms\0eb164bac6675f11f98f96dd2d6650f8\transformed\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\Cetecom\.gradle\caches\8.13\transforms\2d83545a7740bdbcd9ccccf98de4bb8b\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\Cetecom\.gradle\caches\8.13\transforms\2d83545a7740bdbcd9ccccf98de4bb8b\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.autofill:autofill:1.0.0] C:\Users\Cetecom\.gradle\caches\8.13\transforms\59f51479b9b5f9ab6f549b74aca62a17\transformed\autofill-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.autofill:autofill:1.0.0] C:\Users\Cetecom\.gradle\caches\8.13\transforms\59f51479b9b5f9ab6f549b74aca62a17\transformed\autofill-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.compose.ui:ui-tooling-data-android:1.9.0] C:\Users\Cetecom\.gradle\caches\8.13\transforms\53702ee909d1dcdc0c3b502645a9080c\transformed\ui-tooling-data\AndroidManifest.xml:5:5-44
@@ -172,6 +252,8 @@ MERGED from [androidx.compose.ui:ui-graphics-android:1.9.0] C:\Users\Cetecom\.gr
 MERGED from [androidx.compose.ui:ui-graphics-android:1.9.0] C:\Users\Cetecom\.gradle\caches\8.13\transforms\be6e87c34be20ee6bc1311b7e96e6798\transformed\ui-graphics-release\AndroidManifest.xml:5:5-44
 MERGED from [androidx.graphics:graphics-path:1.0.1] C:\Users\Cetecom\.gradle\caches\8.13\transforms\12cb36b8fc9e4c5a90b410020d5b1df3\transformed\graphics-path-1.0.1\AndroidManifest.xml:5:5-44
 MERGED from [androidx.graphics:graphics-path:1.0.1] C:\Users\Cetecom\.gradle\caches\8.13\transforms\12cb36b8fc9e4c5a90b410020d5b1df3\transformed\graphics-path-1.0.1\AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2-views-helper:1.4.0] C:\Users\Cetecom\.gradle\caches\8.13\transforms\0030322307e94ad2348ca1c2f2b2c794\transformed\emoji2-views-helper-1.4.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2-views-helper:1.4.0] C:\Users\Cetecom\.gradle\caches\8.13\transforms\0030322307e94ad2348ca1c2f2b2c794\transformed\emoji2-views-helper-1.4.0\AndroidManifest.xml:5:5-44
 MERGED from [androidx.emoji2:emoji2:1.4.0] C:\Users\Cetecom\.gradle\caches\8.13\transforms\44bcda2ad4c932e966f691bc74d92401\transformed\emoji2-1.4.0\AndroidManifest.xml:21:5-44
 MERGED from [androidx.emoji2:emoji2:1.4.0] C:\Users\Cetecom\.gradle\caches\8.13\transforms\44bcda2ad4c932e966f691bc74d92401\transformed\emoji2-1.4.0\AndroidManifest.xml:21:5-44
 MERGED from [androidx.core:core:1.17.0] C:\Users\Cetecom\.gradle\caches\8.13\transforms\23391ff29b252fda0953347f28d91d98\transformed\core-1.17.0\AndroidManifest.xml:20:5-44
@@ -180,8 +262,6 @@ MERGED from [androidx.lifecycle:lifecycle-process:2.9.4] C:\Users\Cetecom\.gradl
 MERGED from [androidx.lifecycle:lifecycle-process:2.9.4] C:\Users\Cetecom\.gradle\caches\8.13\transforms\3a1b38be5e3eb6633676d4fcca25fd06\transformed\lifecycle-process-2.9.4\AndroidManifest.xml:21:5-44
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.9.4] C:\Users\Cetecom\.gradle\caches\8.13\transforms\b5e63ff173e5ec316a96f5a1127b0da5\transformed\lifecycle-viewmodel-ktx-2.9.4\AndroidManifest.xml:5:5-44
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.9.4] C:\Users\Cetecom\.gradle\caches\8.13\transforms\b5e63ff173e5ec316a96f5a1127b0da5\transformed\lifecycle-viewmodel-ktx-2.9.4\AndroidManifest.xml:5:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.9.4] C:\Users\Cetecom\.gradle\caches\8.13\transforms\d9c3e8f99cff74bd94db2f0ac7a6dfd3\transformed\lifecycle-livedata-core-2.9.4\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.9.4] C:\Users\Cetecom\.gradle\caches\8.13\transforms\d9c3e8f99cff74bd94db2f0ac7a6dfd3\transformed\lifecycle-livedata-core-2.9.4\AndroidManifest.xml:20:5-44
 MERGED from [androidx.savedstate:savedstate-ktx:1.3.1] C:\Users\Cetecom\.gradle\caches\8.13\transforms\13931f82f853f85b98243112dc293e16\transformed\savedstate-ktx-1.3.1\AndroidManifest.xml:5:5-44
 MERGED from [androidx.savedstate:savedstate-ktx:1.3.1] C:\Users\Cetecom\.gradle\caches\8.13\transforms\13931f82f853f85b98243112dc293e16\transformed\savedstate-ktx-1.3.1\AndroidManifest.xml:5:5-44
 MERGED from [androidx.savedstate:savedstate-android:1.3.1] C:\Users\Cetecom\.gradle\caches\8.13\transforms\26422be1200f8217ba182fda20b2f3fe\transformed\savedstate-release\AndroidManifest.xml:20:5-44
@@ -198,10 +278,18 @@ MERGED from [androidx.lifecycle:lifecycle-runtime-compose-android:2.9.4] C:\User
 MERGED from [androidx.lifecycle:lifecycle-runtime-compose-android:2.9.4] C:\Users\Cetecom\.gradle\caches\8.13\transforms\dd5114d85d06692587605728fe678ef3\transformed\lifecycle-runtime-compose-release\AndroidManifest.xml:5:5-44
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate-android:2.9.4] C:\Users\Cetecom\.gradle\caches\8.13\transforms\de3022f6e5899225a5d9c729c3dc22b4\transformed\lifecycle-viewmodel-savedstate-release\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate-android:2.9.4] C:\Users\Cetecom\.gradle\caches\8.13\transforms\de3022f6e5899225a5d9c729c3dc22b4\transformed\lifecycle-viewmodel-savedstate-release\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.9.4] C:\Users\Cetecom\.gradle\caches\8.13\transforms\1e112ba70a0ef571b6419f6312ee9624\transformed\lifecycle-viewmodel-2.9.4\AndroidManifest.xml:4:5-43
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.9.4] C:\Users\Cetecom\.gradle\caches\8.13\transforms\1e112ba70a0ef571b6419f6312ee9624\transformed\lifecycle-viewmodel-2.9.4\AndroidManifest.xml:4:5-43
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-android:2.9.4] C:\Users\Cetecom\.gradle\caches\8.13\transforms\ae975dfb75e1a2c2a3f60db5e36f9193\transformed\lifecycle-viewmodel-release\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-android:2.9.4] C:\Users\Cetecom\.gradle\caches\8.13\transforms\ae975dfb75e1a2c2a3f60db5e36f9193\transformed\lifecycle-viewmodel-release\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.9.4] C:\Users\Cetecom\.gradle\caches\8.13\transforms\014e95c778cb839b02414184e3486fa0\transformed\lifecycle-livedata-core-ktx-2.9.4\AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.9.4] C:\Users\Cetecom\.gradle\caches\8.13\transforms\014e95c778cb839b02414184e3486fa0\transformed\lifecycle-livedata-core-ktx-2.9.4\AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.9.4] C:\Users\Cetecom\.gradle\caches\8.13\transforms\d9c3e8f99cff74bd94db2f0ac7a6dfd3\transformed\lifecycle-livedata-core-2.9.4\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.9.4] C:\Users\Cetecom\.gradle\caches\8.13\transforms\d9c3e8f99cff74bd94db2f0ac7a6dfd3\transformed\lifecycle-livedata-core-2.9.4\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-runtime-android:2.9.4] C:\Users\Cetecom\.gradle\caches\8.13\transforms\d845bb3e5be148c7565c0eb5db4770e4\transformed\lifecycle-runtime-release\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-runtime-android:2.9.4] C:\Users\Cetecom\.gradle\caches\8.13\transforms\d845bb3e5be148c7565c0eb5db4770e4\transformed\lifecycle-runtime-release\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.9.4] C:\Users\Cetecom\.gradle\caches\8.13\transforms\bc9a89da503c3454efc6d3877a8039c7\transformed\lifecycle-livedata-2.9.4\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.9.4] C:\Users\Cetecom\.gradle\caches\8.13\transforms\bc9a89da503c3454efc6d3877a8039c7\transformed\lifecycle-livedata-2.9.4\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-runtime-ktx-android:2.9.4] C:\Users\Cetecom\.gradle\caches\8.13\transforms\1d70ce0d05ca9e27fdea0084f5c40565\transformed\lifecycle-runtime-ktx\AndroidManifest.xml:5:5-44
 MERGED from [androidx.lifecycle:lifecycle-runtime-ktx-android:2.9.4] C:\Users\Cetecom\.gradle\caches\8.13\transforms\1d70ce0d05ca9e27fdea0084f5c40565\transformed\lifecycle-runtime-ktx\AndroidManifest.xml:5:5-44
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-compose-android:2.9.4] C:\Users\Cetecom\.gradle\caches\8.13\transforms\4d2228596d11f02bc44bb62b6982cdec\transformed\lifecycle-viewmodel-compose-release\AndroidManifest.xml:5:5-44
@@ -234,12 +322,50 @@ MERGED from [androidx.tracing:tracing:1.2.0] C:\Users\Cetecom\.gradle\caches\8.1
 MERGED from [androidx.tracing:tracing:1.2.0] C:\Users\Cetecom\.gradle\caches\8.13\transforms\b7671539528aa8f77f36ad362133de71\transformed\tracing-1.2.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Cetecom\.gradle\caches\8.13\transforms\b33e717803773a958d17d1ec22c7ca81\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Cetecom\.gradle\caches\8.13\transforms\b33e717803773a958d17d1ec22c7ca81\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.exifinterface:exifinterface:1.3.6] C:\Users\Cetecom\.gradle\caches\8.13\transforms\f681508c2a31cdbe0279a64b41de2471\transformed\exifinterface-1.3.6\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.exifinterface:exifinterface:1.3.6] C:\Users\Cetecom\.gradle\caches\8.13\transforms\f681508c2a31cdbe0279a64b41de2471\transformed\exifinterface-1.3.6\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.arch.core:core-runtime:2.2.0] C:\Users\Cetecom\.gradle\caches\8.13\transforms\3c4989d8236b6985ad7819148a4d4268\transformed\core-runtime-2.2.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.arch.core:core-runtime:2.2.0] C:\Users\Cetecom\.gradle\caches\8.13\transforms\3c4989d8236b6985ad7819148a4d4268\transformed\core-runtime-2.2.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Cetecom\.gradle\caches\8.13\transforms\6ee843ff025dc3a74250678f236ad5b8\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Cetecom\.gradle\caches\8.13\transforms\6ee843ff025dc3a74250678f236ad5b8\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
 	android:targetSdkVersion
-		INJECTED from C:\Users\Cetecom\StudioProjects\Mobilessemblers\Mobilessemblers\gamerZone\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Cetecom\AndroidStudioProjects\Mobilessemblers\Mobilessemblers\gamerZone\app\src\main\AndroidManifest.xml
+	tools:ignore
+		ADDED from [com.google.accompanist:accompanist-drawablepainter:0.30.1] C:\Users\Cetecom\.gradle\caches\8.13\transforms\b2ccb11372dd6a50874d655e2c3e02e9\transformed\accompanist-drawablepainter-0.30.1\AndroidManifest.xml:23:9-39
 	android:minSdkVersion
-		INJECTED from C:\Users\Cetecom\StudioProjects\Mobilessemblers\Mobilessemblers\gamerZone\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Cetecom\AndroidStudioProjects\Mobilessemblers\Mobilessemblers\gamerZone\app\src\main\AndroidManifest.xml
+service#androidx.camera.core.impl.MetadataHolderService
+ADDED from [androidx.camera:camera-core:1.3.0] C:\Users\Cetecom\.gradle\caches\8.13\transforms\74d7b0ad800b43e22cbfe8ad00797d96\transformed\camera-core-1.3.0\AndroidManifest.xml:29:9-33:78
+MERGED from [androidx.camera:camera-camera2:1.3.0] C:\Users\Cetecom\.gradle\caches\8.13\transforms\ac8c5fad58ea59d4589855db8268699d\transformed\camera-camera2-1.3.0\AndroidManifest.xml:24:9-33:19
+MERGED from [androidx.camera:camera-camera2:1.3.0] C:\Users\Cetecom\.gradle\caches\8.13\transforms\ac8c5fad58ea59d4589855db8268699d\transformed\camera-camera2-1.3.0\AndroidManifest.xml:24:9-33:19
+	android:enabled
+		ADDED from [androidx.camera:camera-core:1.3.0] C:\Users\Cetecom\.gradle\caches\8.13\transforms\74d7b0ad800b43e22cbfe8ad00797d96\transformed\camera-core-1.3.0\AndroidManifest.xml:31:13-36
+	android:exported
+		ADDED from [androidx.camera:camera-core:1.3.0] C:\Users\Cetecom\.gradle\caches\8.13\transforms\74d7b0ad800b43e22cbfe8ad00797d96\transformed\camera-core-1.3.0\AndroidManifest.xml:32:13-37
+	tools:ignore
+		ADDED from [androidx.camera:camera-core:1.3.0] C:\Users\Cetecom\.gradle\caches\8.13\transforms\74d7b0ad800b43e22cbfe8ad00797d96\transformed\camera-core-1.3.0\AndroidManifest.xml:33:13-75
+	android:name
+		ADDED from [androidx.camera:camera-core:1.3.0] C:\Users\Cetecom\.gradle\caches\8.13\transforms\74d7b0ad800b43e22cbfe8ad00797d96\transformed\camera-core-1.3.0\AndroidManifest.xml:30:13-75
+queries
+ADDED from [androidx.camera:camera-extensions:1.3.0] C:\Users\Cetecom\.gradle\caches\8.13\transforms\d46341353af3d495f00576f5fc636802\transformed\camera-extensions-1.3.0\AndroidManifest.xml:22:5-26:15
+intent#action:name:androidx.camera.extensions.action.VENDOR_ACTION
+ADDED from [androidx.camera:camera-extensions:1.3.0] C:\Users\Cetecom\.gradle\caches\8.13\transforms\d46341353af3d495f00576f5fc636802\transformed\camera-extensions-1.3.0\AndroidManifest.xml:23:9-25:18
+action#androidx.camera.extensions.action.VENDOR_ACTION
+ADDED from [androidx.camera:camera-extensions:1.3.0] C:\Users\Cetecom\.gradle\caches\8.13\transforms\d46341353af3d495f00576f5fc636802\transformed\camera-extensions-1.3.0\AndroidManifest.xml:24:13-86
+	android:name
+		ADDED from [androidx.camera:camera-extensions:1.3.0] C:\Users\Cetecom\.gradle\caches\8.13\transforms\d46341353af3d495f00576f5fc636802\transformed\camera-extensions-1.3.0\AndroidManifest.xml:24:21-83
+uses-library#androidx.camera.extensions.impl
+ADDED from [androidx.camera:camera-extensions:1.3.0] C:\Users\Cetecom\.gradle\caches\8.13\transforms\d46341353af3d495f00576f5fc636802\transformed\camera-extensions-1.3.0\AndroidManifest.xml:29:9-31:40
+	android:required
+		ADDED from [androidx.camera:camera-extensions:1.3.0] C:\Users\Cetecom\.gradle\caches\8.13\transforms\d46341353af3d495f00576f5fc636802\transformed\camera-extensions-1.3.0\AndroidManifest.xml:31:13-37
+	android:name
+		ADDED from [androidx.camera:camera-extensions:1.3.0] C:\Users\Cetecom\.gradle\caches\8.13\transforms\d46341353af3d495f00576f5fc636802\transformed\camera-extensions-1.3.0\AndroidManifest.xml:30:13-59
+meta-data#androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER
+ADDED from [androidx.camera:camera-camera2:1.3.0] C:\Users\Cetecom\.gradle\caches\8.13\transforms\ac8c5fad58ea59d4589855db8268699d\transformed\camera-camera2-1.3.0\AndroidManifest.xml:30:13-32:89
+	android:value
+		ADDED from [androidx.camera:camera-camera2:1.3.0] C:\Users\Cetecom\.gradle\caches\8.13\transforms\ac8c5fad58ea59d4589855db8268699d\transformed\camera-camera2-1.3.0\AndroidManifest.xml:32:17-86
+	android:name
+		ADDED from [androidx.camera:camera-camera2:1.3.0] C:\Users\Cetecom\.gradle\caches\8.13\transforms\ac8c5fad58ea59d4589855db8268699d\transformed\camera-camera2-1.3.0\AndroidManifest.xml:31:17-103
 activity#androidx.compose.ui.tooling.PreviewActivity
 ADDED from [androidx.compose.ui:ui-tooling-android:1.9.0] C:\Users\Cetecom\.gradle\caches\8.13\transforms\8e7c8afb7acf8247eeac311575499977\transformed\ui-tooling\AndroidManifest.xml:23:9-25:39
 	android:exported

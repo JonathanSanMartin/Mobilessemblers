@@ -30,12 +30,12 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
 import androidx.compose.material3.Button
 import androidx.compose.material3.Text
 import androidx.compose.ui.Alignment
-import androidx.compose.ui.layout.AlignmentLine
-import androidx.compose.ui.layout.ModifierLocalBeyondBoundsLayout
 import androidx.compose.ui.unit.dp
+import coil.compose.AsyncImage
 import java.io.File
 import java.util.concurrent.Executors
 
@@ -80,7 +80,7 @@ class CamaraScreen(private val navController: NavController? = null) {
                     PreviewView(ctx).apply {
                         val cameraProvider = proveedorCamara.get()
                         val vistaPrevia = Preview.Builder().build().also {
-                            it.setSurfaceProvider { this.surfaceProvider }
+                            it.setSurfaceProvider  (this.surfaceProvider)
                         }
                         try {
                             cameraProvider.unbindAll()
@@ -101,18 +101,15 @@ class CamaraScreen(private val navController: NavController? = null) {
                         salidaFoto,
                         ejecutarCamara,
                         object: ImageCapture.OnImageSavedCallback{
-                            fun guardandoImagen(resultadoSalidaImagen: ImageCapture.OutputFileResults){
+                            override fun onImageSaved(resultadoSalidaImagen: ImageCapture.OutputFileResults){
                                 imagenUri = Uri.fromFile(archivoFoto)
                                 camaraAbierta = false
-                            }
-
-                            override fun onImageSaved(outputFileResults: ImageCapture.OutputFileResults) {
-                                TODO("Not yet implemented")
                             }
 
                             override fun onError(exception: ImageCaptureException) {
                                 TODO("Not yet implemented")
                             }
+
                         }
                     )
 
@@ -140,6 +137,14 @@ class CamaraScreen(private val navController: NavController? = null) {
                     Text(text = "Abrir camara")
                 }
                 Spacer(modifier = Modifier.height(24.dp))
+
+                imagenUri?.let { uri ->
+                    AsyncImage(
+                        model = uri,
+                        contentDescription = "Foto",
+                        modifier = Modifier.size(500.dp)
+                    )
+                }
 
 
             }
