@@ -16,19 +16,21 @@ fun AppNavigation() {
     NavHost(
         navController = navController,
         startDestination = "login"
-    ){
-        composable("login"){
+    ) {
+        composable("login") {
             LoginScreen(navController).login()
         }
 
-        composable("inicio"){
+        composable("inicio") {
             InicioScreen(navController)
         }
-        composable("camara"){
+        composable("camara") {
             CamaraScreen(navController).camara()
         }
-        composable("vibracion"){
+        composable("vibracion") {
             VibracionScreen(navController).vibracion()
         }
+    }
 }
+
 
