@@ -4,8 +4,10 @@ import androidx.compose.runtime.Composable
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import com.example.gamerzone.views.CamaraScreen
 import com.example.gamerzone.views.InicioScreen
 import com.example.gamerzone.views.LoginScreen
+import com.example.gamerzone.views.VibracionScreen
 
 @Composable
 fun AppNavigation() {
@@ -22,21 +24,11 @@ fun AppNavigation() {
         composable("inicio"){
             InicioScreen(navController)
         }
-
-        composable ("camara"){
-            // composable("productos") {
-            //            ProductoScreen(navController, viewModel).pantallaProducto()
-            //        }
-            //
-            //        composable ("camara"){
-            //            CamaraScreen(navController).camara()
-            //        }
-            //
-            //        composable ("vibrar"){
-            //            VibracionScreen(navController).BotonVibrar()
-            //        }
-
+        composable("camara"){
+            CamaraScreen(navController).camara()
         }
-    }
+        composable("vibracion"){
+            VibracionScreen(navController).vibracion()
+        }
 }
 
