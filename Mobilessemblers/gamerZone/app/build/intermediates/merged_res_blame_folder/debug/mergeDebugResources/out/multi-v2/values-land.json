@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.example.gamerzone.app-mergeDebugResources-52:/values-land/values-land.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\rmuji\\.gradle\\caches\\8.13\\transforms\\0e29c9bcc90085cb918472910fc86d27\\transformed\\appcompat-1.6.1\\res\\values-land\\values-land.xml",
+                    "from": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,125,196",
+                        "endColumns": "69,70,67",
+                        "endOffsets": "120,191,259"
+                    }
+                }
+            ]
+        }
+    ]
+}
