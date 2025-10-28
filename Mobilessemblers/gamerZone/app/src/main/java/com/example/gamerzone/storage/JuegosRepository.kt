@@ -1,13 +1,12 @@
 package com.example.gamerzone.storage
 
 import kotlinx.coroutines.flow.Flow
-class JuegosRepository (private val productDao: ProductDao){
-    suspend fun insertProduct(product: Producto): Long {
-        return productDao.insertProduct(product)
+class JuegosRepository (private val juegosDao: JuegosDao){
+    suspend fun insertProduct(product: Juegos): Long {
+        return JuegosDao.insertProduct(product)
     }
-    // pendiente
 
-    fun getAllProducts(): Flow<List<Producto>> {
-        return productDao.getAllProducts()
+    fun getAllProducts(): Flow<List<Juegos>> {
+        return juegosDao.getAllProducts()
     }
 }

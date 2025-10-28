@@ -22,6 +22,21 @@ fun AppNavigation() {
         composable("inicio"){
             InicioScreen(navController)
         }
+
+        composable ("camara"){
+            // composable("productos") {
+            //            ProductoScreen(navController, viewModel).pantallaProducto()
+            //        }
+            //
+            //        composable ("camara"){
+            //            CamaraScreen(navController).camara()
+            //        }
+            //
+            //        composable ("vibrar"){
+            //            VibracionScreen(navController).BotonVibrar()
+            //        }
+
+        }
     }
 }
 
