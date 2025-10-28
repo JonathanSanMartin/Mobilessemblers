@@ -7,10 +7,10 @@ import com.example.gamerzone.viewModel.JuegosViewModel
 
 class JuegosViewModelFactory(private val repository: JuegosRepository) : ViewModelProvider.Factory {
     override fun <T : ViewModel> create(modelClass: Class<T>): T {
-        if (modelClass.isAssignableFrom(JuegosViewModel:class.java)) {
+        if (modelClass.isAssignableFrom(JuegosViewModel as Class<*>:class.java)) {
             @Suppress("UNCHECKED_CAST")
             return JuegosViewModel(repository) as T
         }
-        throw IllegalArgumentException("Unknown ViewModel class..")
+        throw IllegalArgumentException("Unknown ViewModel class")
     }
 }
