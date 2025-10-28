@@ -1,4 +1,4 @@
 package com.example.gamerzone.models
 
-class Juegos {
+class Juegos(nombre: String, precio: Double) {
 }

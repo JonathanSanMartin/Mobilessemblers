@@ -72,7 +72,7 @@ class LoginViewModel: ViewModel() {
         }else if(loginViewModel.correo.isBlank() || loginViewModel.contrasena.isBlank()){
             tituloAlerta = "Error de validación"
             mensajeAlerta = "El correo y la contraseña no pueden estar vacíos."
-            textoBtnAlerta = "Confrimar"
+            textoBtnAlerta = "Aceptar"
 
         }else{
             tituloAlerta = "Error de credenciales"

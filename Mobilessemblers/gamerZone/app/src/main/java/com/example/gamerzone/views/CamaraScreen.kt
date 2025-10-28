@@ -39,9 +39,7 @@ import coil.compose.AsyncImage
 import java.io.File
 import java.util.concurrent.Executors
 
-
 class CamaraScreen(private val navController: NavController? = null) {
-
     @Composable
     fun camara() {
         val context = LocalContext.current
