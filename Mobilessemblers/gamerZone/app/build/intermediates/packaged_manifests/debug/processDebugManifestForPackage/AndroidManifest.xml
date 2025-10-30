@@ -47,10 +47,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <!--
-        Service for holding metadata. Cannot be instantiated.
-        Metadata will be merged from other manifests.
-        -->
+
+        <uses-library
+            android:name="androidx.camera.extensions.impl"
+            android:required="false" />
+
         <service
             android:name="androidx.camera.core.impl.MetadataHolderService"
             android:enabled="false"
@@ -59,10 +60,6 @@
                 android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER"
                 android:value="androidx.camera.camera2.Camera2Config$DefaultProvider" />
         </service>
-
-        <uses-library
-            android:name="androidx.camera.extensions.impl"
-            android:required="false" />
 
         <activity
             android:name="androidx.compose.ui.tooling.PreviewActivity"

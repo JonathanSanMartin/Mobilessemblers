@@ -159,6 +159,14 @@ class LoginScreen(private val navController: NavHostController? = null) {
             {
                 Text("Acceder")
             }
+
+            Button(
+                onClick = {viewModel.registro()},
+                modifier = Modifier.fillMaxWidth()
+            )
+            {
+                Text("Registrarse")
+            }
         }
     }
 }

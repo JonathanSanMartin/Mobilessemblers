@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.gamerzone.app-mergeDebugResources-52:/values-land/values-land.xml",
+            "outputFile": "com.example.gamerzone.app-mergeDebugResources-54:/values-land/values-land.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\rmuji\\.gradle\\caches\\8.13\\transforms\\0e29c9bcc90085cb918472910fc86d27\\transformed\\appcompat-1.6.1\\res\\values-land\\values-land.xml",
+                    "source": "C:\\Users\\Cetecom\\.gradle\\caches\\8.13\\transforms\\0b098f1bf59934bad273916065ce2ee8\\transformed\\appcompat-1.6.1\\res\\values-land\\values-land.xml",
                     "from": {
                         "startLines": "2,3,4",
                         "startColumns": "4,4,4",
