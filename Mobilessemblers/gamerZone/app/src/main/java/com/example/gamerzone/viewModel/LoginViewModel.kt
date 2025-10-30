@@ -1,10 +1,12 @@
 package com.example.gamerzone.viewModel
 
 import android.util.Log
+import android.widget.EditText
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
 import androidx.lifecycle.ViewModel
+import com.example.gamerzone.R
 import com.example.gamerzone.models.LoginModel
 
 class LoginViewModel: ViewModel() {
@@ -81,4 +83,8 @@ class LoginViewModel: ViewModel() {
             mostrarAlerta = true
         }
     }
+
+    fun registro({
+
+    })
 }
