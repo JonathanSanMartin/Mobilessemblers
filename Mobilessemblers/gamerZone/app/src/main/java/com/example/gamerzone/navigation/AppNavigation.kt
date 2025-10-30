@@ -22,7 +22,7 @@ fun AppNavigation() {
         }
 
         composable("inicio") {
-            InicioScreen(navController)
+            InicioScreen(navController).inicio()
         }
         composable("camara") {
             CamaraScreen(navController).camara()

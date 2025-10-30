@@ -1,5 +1,6 @@
 package com.example.gamerzone.viewModel
 
+import androidx.compose.ui.unit.IntRect
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.gamerzone.models.Juegos
@@ -41,7 +42,8 @@ class JuegosViewModel(private val repository: JuegosRepository) : ViewModel() {
         val priceDouble = price.value.toDoubleOrNull() ?: 0.0
         val product = Juegos(
             nombre = name.value,
-            precio = priceDouble
+            precio = priceDouble,
+            imagen = Int.SIZE_BYTES
         )
         viewModelScope.launch {
             repository.insertProduct(product)
