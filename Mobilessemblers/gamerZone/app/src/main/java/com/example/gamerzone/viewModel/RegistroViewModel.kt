@@ -5,24 +5,42 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
 import androidx.lifecycle.ViewModel
-import com.example.gamerzone.R
 import com.example.gamerzone.models.RegistroModel
 
 class RegistroViewModel: ViewModel() {
-    val navegacion: Any
-    var RegistroViewModel by mutableStateOf(RegistroModel( "","", "", "", 0))
+    var RegistroViewModel by mutableStateOf(RegistroModel("", "", "", "", 0))
 
-    fun cambiarNombre (nuevoNombre:String){
-        RegistroViewModel= RegistroViewModel.copy(nombre = nuevoNombre)
-
-        val btnGuardar = findViewById<Button>(R.id.btnGuardar)
-
-        btnGuardar.setOnClickListener {
-            val nombre = etNombre.text.toString().trim()
-
-
-        }
+    // variables.
+    fun cambiarNombre(nombre: String) {
+        RegistroViewModel = RegistroViewModel.copy(nombre)
     }
+
+    fun cambiarCorreo(correo: String) {
+        RegistroViewModel = RegistroViewModel.copy(correo = correo)
+    }
+
+    fun cambiarContrasena(contrasena: String): String? {
+        RegistroViewModel = RegistroViewModel.copy(contrasena = contrasena)
+        if (!contrasena.any { it.isUpperCase() })
+            return "Debe incluir al menos una letra mayúscula"
+        if (!contrasena.any { it.isLowerCase() })
+            return "Debe incluir al menos una letra minúscula"
+        if (!contrasena.any { it.isDigit() })
+            return "Debe incluir al menos un número"
+        if (!contrasena.any { it in "@#\$%&*!?" })
+            return "Debe incluir al menos un carácter especial (@#\$%&*!?)"
+        return null
+    }
+
+    fun cambiarConfirmarContrasena(confirmarContrasena: String) {
+        RegistroViewModel = RegistroViewModel.copy(confirmarContrasena = confirmarContrasena)
+    }
+
+    fun cambiarTelefono(telefono: Int.Companion) {
+        RegistroViewModel = RegistroViewModel.copy()
+    }
+
+
     var mostrarAlerta by mutableStateOf(false)
         private set
     var tituloAlerta by mutableStateOf("")
@@ -32,14 +50,15 @@ class RegistroViewModel: ViewModel() {
     var textoBtnAlerta by mutableStateOf("")
         private set
 
-    fun descartarAlerta(){
+    // navegacion
+    fun descartarAlerta() {
         mostrarAlerta = false
     }
 
     var navegacion by mutableStateOf(false)
         private set
 
-    fun cambiarEstadoNavegacion(){
+    fun cambiarEstadoNavegacion() {
         navegacion = false
     }
 
@@ -54,79 +73,69 @@ class RegistroViewModel: ViewModel() {
     var textoBtnCancelar by mutableStateOf("")
         private set
 
-    fun btnAceptarConfirmar(){
+    //botones
+    fun btnAceptarConfirmar() {
         mostrarConfirmacion = false
     }
 
-    fun btnCancelarConfirmar(){
+    fun btnCancelarConfirmar() {
         mostrarConfirmacion = false
     }
 
-    fun terminarConfirmar(){
+    fun terminarConfirmar() {
         mostrarConfirmacion = false
     }
 
-    fun registro(){
+    //FUNCION DE REGISTRO.
+    fun registro() {
         Log.d("NOMBRE", RegistroViewModel.nombre)
-        Log.d("CORREO",RegistroViewModel.correo)
-        Log.d("CONTRASEÑA",RegistroViewModel.contrasena)
+        Log.d("CORREO", RegistroViewModel.correo)
+        Log.d("CONTRASEÑA", RegistroViewModel.contrasena)
         Log.d("CONFIRMAR CONTRASEÑA", RegistroViewModel.confirmarContrasena)
         Log.d("TELEFONO", RegistroViewModel.telefono.toString())
 
-        if(RegistroViewModel.nombre.isEmpty()){
-                tituloAlerta = "Error de validación"
-                mensajeAlerta = "El nombre no puede estar vacío."
-                textoBtnAlerta = "Aceptar"
-            }else if(!RegistroViewModel.nombre.matches(Regex("^[A-Za-zÁÉÍÓÚáéíóúÑñ ]+$"))){
-                tituloAlerta = "Error de validación"
-                mensajeAlerta = "El nombre tiene símbolos no permitidos."
-                textoBtnAlerta = "Aceptar"
-        }else if(RegistroViewModel.nombre.length > 100) {
-                tituloAlerta = "Error de validación"
-                mensajeAlerta = "El nombre es muy largo."
-                textoBtnAlerta = "Aceptar"
-        }else if(RegistroViewModel.correo.isBlank() || RegistroViewModel.contrasena.isBlank()) {
+        if (RegistroViewModel.nombre.isEmpty()) {
             tituloAlerta = "Error de validación"
-            mensajeAlerta = "El correo y la contraseña no pueden estar vacíos."
-            textoBtnAlerta = "Aceptar"
-        }
-
-        } || nombre.lengtRegistroViewModel.contrasena == "1"){
-            navegacion = true
-
-
-
-        }else{
-            tituloAlerta = "Error de credenciales"
-            mensajeAlerta = "El correo o la contraseña no corresponden."
+            mensajeAlerta = "El nombre no puede estar vacío."
             textoBtnAlerta = "Aceptar"
             mostrarAlerta = true
+        } else if (!RegistroViewModel.nombre.matches(Regex("^[A-Za-zÁÉÍÓÚáéíóúÑñ ]+$"))) {
+            tituloAlerta = "Error de validación"
+            mensajeAlerta = "El nombre tiene símbolos no permitidos."
+            textoBtnAlerta = "Aceptar"
+            mostrarAlerta = true
+        } else if (RegistroViewModel.nombre.length > 100) {
+            tituloAlerta = "Error de validación"
+            mensajeAlerta = "El nombre es muy largo."
+            textoBtnAlerta = "Aceptar"
+            mostrarAlerta = true
+        } else if (RegistroViewModel.correo.isBlank() || RegistroViewModel.contrasena.isBlank()) {
+            tituloAlerta = "Error de validación"
+            mensajeAlerta = "El correo y la contraseña no pueden estar vcíos."
+            textoBtnAlerta = "Aceptar"
+            mostrarAlerta = true
+        } else if (RegistroViewModel.correo.matches(Regex("^[A-Za-z0-9._%+-]+@duoc\\.cl$")) || RegistroViewModel.correo.length <= 60) {
+            tituloAlerta = "Error de validación"
+            mensajeAlerta = "El correo debe ser mayor a 60 caracteres y ser duoc.cl"
+            textoBtnAlerta = "Aceptar"
+            mostrarAlerta = true
+        } else if (RegistroViewModel.contrasena !== RegistroViewModel.confirmarContrasena) {
+            tituloAlerta = "Error de validación"
+            mensajeAlerta = "Las contraseñas no coinciden."
+            textoBtnAlerta = "Aceptar"
+            mostrarAlerta = true
+        }else if (RegistroViewModel.telefono.matches(Regex("^\\d+$"))){
+            tituloAlerta = "Error de validación"
+            mensajeAlerta = "Solo números en el número de telefono"
+            textoBtnAlerta = "Aceptar"
+            mostrarAlerta = true
+        } else {
+            navegacion = true
         }
-    }
-
-
-    when {
-        nombre.isEmpty() -> {
-            etNombre.error = "El campo no puede estar vacío"
-        }
-         -> {
-            etNombre.error = "Solo se permiten letras y espacios"
-        }
-        nombre.length > 100 -> {
-            etNombre.error = "El nombre no puede tener más de 100 caracteres"
-        }
-        else -> {
-            // Pasa la validación
-            Toast.makeText(this, "Campo válido", Toast.LENGTH_SHORT).show()
-        }
-    }
-
-    fun registro({
-
-    })
-
-
-    fun registro (){
-        Log.d("CORREO", loginViewModel.correo)
     }
 }
+
+private fun Int.matches(int: kotlin.text.Regex): Boolean {
+    println("borrar esto despues")
+return true}
+

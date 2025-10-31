@@ -35,17 +35,19 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavHostController
 import com.example.gamerzone.R
 import com.example.gamerzone.helper.showAlert
 import com.example.gamerzone.helper.showConfirm
 import com.example.gamerzone.viewModel.LoginViewModel
+import com.example.gamerzone.viewModel.RegistroViewModel
 
 class LoginScreen(private val navController: NavHostController? = null) {
 
     @Composable
-    fun login(){
+    fun login() {
 
         val viewModel = viewModel<LoginViewModel>()
         val correo = viewModel.loginViewModel.correo
@@ -53,31 +55,31 @@ class LoginScreen(private val navController: NavHostController? = null) {
 
         val nav = viewModel.navegacion
 
-        if(nav == true){
+        if (nav == true) {
             navController?.navigate("inicio")
             viewModel.cambiarEstadoNavegacion()
         }
 
 
-        if(viewModel.mostrarAlerta == true){
+        if (viewModel.mostrarAlerta == true) {
             showAlert(
                 titulo = viewModel.tituloAlerta,
                 mensaje = viewModel.mensajeAlerta,
-                onDismiss = {viewModel.descartarAlerta()},
-                onConfirm = {viewModel.descartarAlerta()},
+                onDismiss = { viewModel.descartarAlerta() },
+                onConfirm = { viewModel.descartarAlerta() },
                 textoBtnConfirmar = viewModel.textoBtnCancelar
             )
         }
 
-        if(viewModel.mostrarConfirmacion == true){
+        if (viewModel.mostrarConfirmacion == true) {
             showConfirm(
                 titulo = viewModel.tituloConfirmacion,
                 mensaje = viewModel.mensajeConfirmacion,
                 textoBtnCancelar = viewModel.textoBtnCancelar,
                 textoBtnConfirmar = viewModel.textoBtnConfirmacion,
-                eventoCancelar = {viewModel.btnCancelarConfirmar()},
-                eventoConfirmar = {viewModel.btnAceptarConfirmar()},
-                eventoTerminarAlerta = {viewModel.terminarConfirmar()}
+                eventoCancelar = { viewModel.btnCancelarConfirmar() },
+                eventoConfirmar = { viewModel.btnAceptarConfirmar() },
+                eventoTerminarAlerta = { viewModel.terminarConfirmar() }
             )
         }
 
@@ -96,18 +98,18 @@ class LoginScreen(private val navController: NavHostController? = null) {
             )
         )
 
-        var cambioColor by remember{ mutableStateOf(false) }
+        var cambioColor by remember { mutableStateOf(false) }
 
         val colorFondo by animateColorAsState(
-            if(cambioColor) Color.Red else Color.Blue
+            if (cambioColor) Color.Red else Color.Blue
         )
 
 
-        Column (
+        Column(
             modifier = Modifier
                 .fillMaxSize()
                 .background(colorFondo)
-                .clickable{cambioColor = !cambioColor}
+                .clickable { cambioColor = !cambioColor }
                 .padding(32.dp),
             verticalArrangement = Arrangement.Center
         )
@@ -135,8 +137,8 @@ class LoginScreen(private val navController: NavHostController? = null) {
 
             TextField(
                 value = correo,
-                onValueChange = {viewModel.cambiarCorreo(it)},
-                label = {Text("Correo electrónico")},
+                onValueChange = { viewModel.cambiarCorreo(it) },
+                label = { Text("Correo electrónico") },
                 modifier = Modifier.fillMaxWidth()
             )
 
@@ -144,8 +146,8 @@ class LoginScreen(private val navController: NavHostController? = null) {
 
             TextField(
                 value = contrasena,
-                onValueChange = {viewModel.cambiarContrasena(it)},
-                label = {Text("Contraseña")},
+                onValueChange = { viewModel.cambiarContrasena(it) },
+                label = { Text("Contraseña") },
                 modifier = Modifier.fillMaxWidth(),
                 visualTransformation = PasswordVisualTransformation()
             )
@@ -153,7 +155,7 @@ class LoginScreen(private val navController: NavHostController? = null) {
             Spacer(modifier = Modifier.height(16.dp))
 
             Button(
-                onClick = {viewModel.auth()},
+                onClick = { viewModel.auth() },
                 modifier = Modifier.fillMaxWidth()
             )
             {
@@ -161,7 +163,7 @@ class LoginScreen(private val navController: NavHostController? = null) {
             }
 
             Button(
-                onClick = {viewModel.registro()},
+                onClick = { viewModel.registro() },
                 modifier = Modifier.fillMaxWidth()
             )
             {
@@ -169,11 +171,20 @@ class LoginScreen(private val navController: NavHostController? = null) {
             }
         }
     }
-}
+
+        fun registro() {
+            RegistroViewModel
+        }
+    }
 
 
 @Preview(showBackground = true)
 @Composable
 fun verLogin(){
     LoginScreen().login()
+}
+
+@Composable
+fun verRegistro(){
+    val viewModel = viewModel<RegistroViewModel>()
 }

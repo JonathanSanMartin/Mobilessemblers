@@ -8,4 +8,3 @@ data class RegistroModel(
     var telefono: Int
 )
 
-)

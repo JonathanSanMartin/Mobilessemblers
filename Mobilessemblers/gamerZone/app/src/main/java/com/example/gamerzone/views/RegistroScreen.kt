@@ -1,5 +1,6 @@
 package com.example.gamerzone.views
 
+import android.R.attr.onClick
 import androidx.compose.animation.animateColorAsState
 import androidx.compose.animation.core.FastOutSlowInEasing
 import androidx.compose.animation.core.RepeatMode
@@ -44,7 +45,7 @@ import com.example.gamerzone.viewModel.RegistroViewModel
 
 class RegistroScreen(private val navController: NavHostController? = null)  {
     @Composable
-    fun login(){
+    fun registro(){
 
         val viewModel = viewModel<RegistroViewModel>()
         val nombre = viewModel.RegistroViewModel.nombre
@@ -55,12 +56,12 @@ class RegistroScreen(private val navController: NavHostController? = null)  {
 
         val nav = viewModel.navegacion
 
-        if(nav == true){
-            navController?.navigate("inicio")
+        if(nav){
+            navController?.navigate("inicio") /// RUTA DEFINIR
             viewModel.cambiarEstadoNavegacion()
         }
 
-        if(viewModel.mostrarAlerta == true){
+        if(viewModel.mostrarAlerta){
             showAlert(
                 titulo = viewModel.tituloAlerta,
                 mensaje = viewModel.mensajeAlerta,
@@ -70,7 +71,7 @@ class RegistroScreen(private val navController: NavHostController? = null)  {
             )
         }
 
-        if(viewModel.mostrarConfirmacion == true){
+        if(viewModel.mostrarConfirmacion){
             showConfirm(
                 titulo = viewModel.tituloConfirmacion,
                 mensaje = viewModel.mensajeConfirmacion,
@@ -81,7 +82,6 @@ class RegistroScreen(private val navController: NavHostController? = null)  {
                 eventoTerminarAlerta = {viewModel.terminarConfirmar()}
             )
         }
-
 
         val trancisionInfinita = rememberInfiniteTransition()
 
@@ -103,7 +103,6 @@ class RegistroScreen(private val navController: NavHostController? = null)  {
             if(cambioColor) Color.Red else Color.Blue
         )
 
-
         Column (
             modifier = Modifier
                 .fillMaxSize()
@@ -114,7 +113,7 @@ class RegistroScreen(private val navController: NavHostController? = null)  {
         )
         {
             Text(
-                text = "Iniciar sesión",
+                text = "Registrarse",
                 fontSize = 24.sp,
                 fontWeight = FontWeight.Bold,
                 modifier = Modifier
@@ -135,6 +134,14 @@ class RegistroScreen(private val navController: NavHostController? = null)  {
             Spacer(modifier = Modifier.height(35.dp))
 
             TextField(
+                value = nombre,
+                onValueChange = {viewModel.cambiarNombre(it)},
+                label = {Text("Nombre completo:")},
+                modifier = Modifier.fillMaxWidth()
+            )
+            Spacer(modifier = Modifier.height(16.dp))
+
+            TextField(
                 value = correo,
                 onValueChange = {viewModel.cambiarCorreo(it)},
                 label = {Text("Correo electrónico")},
@@ -153,13 +160,24 @@ class RegistroScreen(private val navController: NavHostController? = null)  {
 
             Spacer(modifier = Modifier.height(16.dp))
 
-            Button(
-                onClick = {viewModel.auth()},
+            TextField(
+                value = confirmarContrasena,
+                onValueChange = {viewModel.cambiarConfirmarContrasena(it)},
+                label = {Text("Confirmar la contraseña")},
+                modifier = Modifier.fillMaxWidth(),
+                visualTransformation = PasswordVisualTransformation()
+            )
+
+            Spacer(modifier = Modifier.height(16.dp))
+
+            IntField(
+                value = telefono,
+                onValueChange = {viewModel.cambiarTelefono(Int)},
+                label = { Int("Número de teléfono") },
                 modifier = Modifier.fillMaxWidth()
             )
-            {
-                Text("Acceder")
-            }
+
+            Spacer(modifier = Modifier.height(16.dp))
 
             Button(
                 onClick = {viewModel.registro()},
@@ -168,7 +186,26 @@ class RegistroScreen(private val navController: NavHostController? = null)  {
             {
                 Text("Registrarse")
             }
+
+            Button(
+                onClick = {viewModel.inicio()},
+                modifier = Modifier.fillMaxWidth()
+            )
+            {
+                Text("Atrás")
+            }
         }
+    }
+
+    fun RegistroViewModel.inicio() {
+        onClick = {viewModel.inicio {
+            LoginScreen().login()
+        }
+    }
+
+    @Composable
+    fun IntField(value: Int, onValueChange: () -> Unit, label: () -> Int, modifier: Modifier) {
+        TODO("Not yet implemented")
     }
 }
 

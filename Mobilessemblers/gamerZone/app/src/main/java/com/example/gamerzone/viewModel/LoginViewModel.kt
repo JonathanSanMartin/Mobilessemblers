@@ -83,8 +83,4 @@ class LoginViewModel: ViewModel() {
             mostrarAlerta = true
         }
     }
-
-    fun registro({
-
-    })
 }
