@@ -197,4 +197,9 @@ class RegistroScreen(private val navController: NavHostController? = null) {
             }
         }
     }
+
+    private fun RegistroViewModel.login() {
+        navController?.navigate("login")
+
+    }
 }
