@@ -1,6 +1,5 @@
 package com.example.gamerzone.viewModel
 
-import androidx.compose.ui.unit.IntRect
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.gamerzone.models.Juegos

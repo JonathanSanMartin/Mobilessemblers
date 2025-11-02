@@ -135,10 +135,7 @@ class RegistroViewModel: ViewModel() {
     }
 }
 
-fun inicio (){
-
-}
 private fun Int.matches(int: kotlin.text.Regex): Boolean {
-    println("borrar esto despues")
-return true}
+return true
+}
 

@@ -47,7 +47,7 @@ class InicioScreen(private val navController: NavHostController? = null) {
             var expandirMenu by remember { mutableStateOf(false) }
             var menuDerecha by remember { mutableStateOf(false) }
 
-            var juegos = listOf<Juegos>(
+            val juegos = listOf<Juegos>(
                 Juegos("F1 2024",50000.0, R.drawable.f1),
                 Juegos("Minecraft",40000.0, R.drawable.minecraft),
                 Juegos("Rocket League",60000.0, R.drawable.rocketleague),

@@ -32,10 +32,8 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.text.style.TextAlign
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavHostController
 import com.example.gamerzone.R
@@ -172,11 +170,6 @@ class LoginScreen(private val navController: NavHostController? = null) {
                     Text("Registrarse")
                 }
         }
-    }
-
-    @Composable
-    fun verLogin() {
-        LoginScreen().login()
     }
 
     @Composable

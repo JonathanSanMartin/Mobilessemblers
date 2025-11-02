@@ -1,12 +1,10 @@
 package com.example.gamerzone.viewModel
 
 import android.util.Log
-import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
 import androidx.lifecycle.ViewModel
-import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.gamerzone.models.LoginModel
 
 class LoginViewModel : ViewModel() {
