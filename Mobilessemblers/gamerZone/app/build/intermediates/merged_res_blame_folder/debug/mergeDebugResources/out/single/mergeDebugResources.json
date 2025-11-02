@@ -1,74 +1,118 @@
 [
     {
-        "merged": "com.example.gamerzone.app-debug-56:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "com.example.gamerzone.app-main-58:/mipmap-anydpi-v26/ic_launcher_round.xml"
+        "merged": "C:\\Users\\rmuji\\.gradle\\daemon\\8.13\\com.example.gamerzone.app-debug-56:\\drawable_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\rmuji\\.gradle\\daemon\\8.13\\com.example.gamerzone.app-main-58:\\drawable\\ic_launcher_foreground.xml"
     },
     {
-        "merged": "com.example.gamerzone.app-debug-56:/mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "com.example.gamerzone.app-main-58:/mipmap-xxhdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\rmuji\\.gradle\\daemon\\8.13\\com.example.gamerzone.app-debug-56:\\drawable_cod.avif.flat",
+        "source": "C:\\Users\\rmuji\\.gradle\\daemon\\8.13\\com.example.gamerzone.app-main-58:\\drawable\\cod.avif"
     },
     {
-        "merged": "com.example.gamerzone.app-debug-56:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.gamerzone.app-main-58:/mipmap-xxxhdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\rmuji\\.gradle\\daemon\\8.13\\com.example.gamerzone.app-debug-56:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\rmuji\\.gradle\\daemon\\8.13\\com.example.gamerzone.app-main-58:\\mipmap-xhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.example.gamerzone.app-debug-56:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.gamerzone.app-main-58:/mipmap-xxhdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\rmuji\\.gradle\\daemon\\8.13\\com.example.gamerzone.app-debug-56:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\rmuji\\.gradle\\daemon\\8.13\\com.example.gamerzone.app-main-58:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.gamerzone.app-debug-56:/drawable_imagenlogin.png.flat",
-        "source": "com.example.gamerzone.app-main-58:/drawable/imagenlogin.png"
+        "merged": "C:\\Users\\rmuji\\.gradle\\daemon\\8.13\\com.example.gamerzone.app-debug-56:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\rmuji\\.gradle\\daemon\\8.13\\com.example.gamerzone.app-main-58:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
-        "merged": "com.example.gamerzone.app-debug-56:/mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "com.example.gamerzone.app-main-58:/mipmap-mdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\rmuji\\.gradle\\daemon\\8.13\\com.example.gamerzone.app-debug-56:\\drawable_fc2026.avif.flat",
+        "source": "C:\\Users\\rmuji\\.gradle\\daemon\\8.13\\com.example.gamerzone.app-main-58:\\drawable\\fc2026.avif"
     },
     {
-        "merged": "com.example.gamerzone.app-debug-56:/mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "com.example.gamerzone.app-main-58:/mipmap-xxxhdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\rmuji\\.gradle\\daemon\\8.13\\com.example.gamerzone.app-debug-56:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\rmuji\\.gradle\\daemon\\8.13\\com.example.gamerzone.app-main-58:\\mipmap-mdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.example.gamerzone.app-debug-56:/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "com.example.gamerzone.app-main-58:/mipmap-anydpi-v26/ic_launcher.xml"
+        "merged": "C:\\Users\\rmuji\\.gradle\\daemon\\8.13\\com.example.gamerzone.app-debug-56:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\rmuji\\.gradle\\daemon\\8.13\\com.example.gamerzone.app-main-58:\\mipmap-xhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.gamerzone.app-debug-56:/xml_data_extraction_rules.xml.flat",
-        "source": "com.example.gamerzone.app-main-58:/xml/data_extraction_rules.xml"
+        "merged": "com.example.gamerzone.app-debug-56:/drawable_cod.jpg.flat",
+        "source": "com.example.gamerzone.app-main-58:/drawable/cod.jpg"
     },
     {
-        "merged": "com.example.gamerzone.app-debug-56:/mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "com.example.gamerzone.app-main-58:/mipmap-hdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\rmuji\\.gradle\\daemon\\8.13\\com.example.gamerzone.app-debug-56:\\drawable_gtav.webp.flat",
+        "source": "C:\\Users\\rmuji\\.gradle\\daemon\\8.13\\com.example.gamerzone.app-main-58:\\drawable\\gtav.webp"
     },
     {
-        "merged": "com.example.gamerzone.app-debug-56:/drawable_f1.jpg.flat",
-        "source": "com.example.gamerzone.app-main-58:/drawable/f1.jpg"
+        "merged": "C:\\Users\\rmuji\\.gradle\\daemon\\8.13\\com.example.gamerzone.app-debug-56:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\rmuji\\.gradle\\daemon\\8.13\\com.example.gamerzone.app-main-58:\\xml\\backup_rules.xml"
     },
     {
-        "merged": "com.example.gamerzone.app-debug-56:/xml_backup_rules.xml.flat",
-        "source": "com.example.gamerzone.app-main-58:/xml/backup_rules.xml"
+        "merged": "C:\\Users\\rmuji\\.gradle\\daemon\\8.13\\com.example.gamerzone.app-debug-56:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\rmuji\\.gradle\\daemon\\8.13\\com.example.gamerzone.app-main-58:\\mipmap-mdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.gamerzone.app-debug-56:/mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.gamerzone.app-main-58:/mipmap-xhdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\rmuji\\.gradle\\daemon\\8.13\\com.example.gamerzone.app-debug-56:\\drawable_minecraft.jpg.flat",
+        "source": "C:\\Users\\rmuji\\.gradle\\daemon\\8.13\\com.example.gamerzone.app-main-58:\\drawable\\minecraft.jpg"
     },
     {
-        "merged": "com.example.gamerzone.app-debug-56:/mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "com.example.gamerzone.app-main-58:/mipmap-xhdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\rmuji\\.gradle\\daemon\\8.13\\com.example.gamerzone.app-debug-56:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\rmuji\\.gradle\\daemon\\8.13\\com.example.gamerzone.app-main-58:\\mipmap-xxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.gamerzone.app-debug-56:/drawable_ic_launcher_background.xml.flat",
-        "source": "com.example.gamerzone.app-main-58:/drawable/ic_launcher_background.xml"
+        "merged": "C:\\Users\\rmuji\\.gradle\\daemon\\8.13\\com.example.gamerzone.app-debug-56:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\rmuji\\.gradle\\daemon\\8.13\\com.example.gamerzone.app-main-58:\\xml\\data_extraction_rules.xml"
     },
     {
-        "merged": "com.example.gamerzone.app-debug-56:/mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.gamerzone.app-main-58:/mipmap-hdpi/ic_launcher_round.webp"
+        "merged": "com.example.gamerzone.app-debug-56:/drawable_reddead.jpg.flat",
+        "source": "com.example.gamerzone.app-main-58:/drawable/reddead.jpg"
     },
     {
-        "merged": "com.example.gamerzone.app-debug-56:/drawable_ic_launcher_foreground.xml.flat",
-        "source": "com.example.gamerzone.app-main-58:/drawable/ic_launcher_foreground.xml"
+        "merged": "C:\\Users\\rmuji\\.gradle\\daemon\\8.13\\com.example.gamerzone.app-debug-56:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\rmuji\\.gradle\\daemon\\8.13\\com.example.gamerzone.app-main-58:\\mipmap-hdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.gamerzone.app-debug-56:/mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.gamerzone.app-main-58:/mipmap-mdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\rmuji\\.gradle\\daemon\\8.13\\com.example.gamerzone.app-debug-56:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\rmuji\\.gradle\\daemon\\8.13\\com.example.gamerzone.app-main-58:\\mipmap-xxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\rmuji\\.gradle\\daemon\\8.13\\com.example.gamerzone.app-debug-56:\\drawable_rocketleague.webp.flat",
+        "source": "C:\\Users\\rmuji\\.gradle\\daemon\\8.13\\com.example.gamerzone.app-main-58:\\drawable\\rocketleague.webp"
+    },
+    {
+        "merged": "C:\\Users\\rmuji\\.gradle\\daemon\\8.13\\com.example.gamerzone.app-debug-56:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\rmuji\\.gradle\\daemon\\8.13\\com.example.gamerzone.app-main-58:\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.example.gamerzone.app-debug-56:/drawable_fc2026.jpg.flat",
+        "source": "com.example.gamerzone.app-main-58:/drawable/fc2026.jpg"
+    },
+    {
+        "merged": "C:\\Users\\rmuji\\.gradle\\daemon\\8.13\\com.example.gamerzone.app-debug-56:\\drawable_goat.jpg.flat",
+        "source": "C:\\Users\\rmuji\\.gradle\\daemon\\8.13\\com.example.gamerzone.app-main-58:\\drawable\\goat.jpg"
+    },
+    {
+        "merged": "C:\\Users\\rmuji\\.gradle\\daemon\\8.13\\com.example.gamerzone.app-debug-56:\\drawable_imagenlogin.png.flat",
+        "source": "C:\\Users\\rmuji\\.gradle\\daemon\\8.13\\com.example.gamerzone.app-main-58:\\drawable\\imagenlogin.png"
+    },
+    {
+        "merged": "C:\\Users\\rmuji\\.gradle\\daemon\\8.13\\com.example.gamerzone.app-debug-56:\\drawable_pes.jpg.flat",
+        "source": "C:\\Users\\rmuji\\.gradle\\daemon\\8.13\\com.example.gamerzone.app-main-58:\\drawable\\pes.jpg"
+    },
+    {
+        "merged": "C:\\Users\\rmuji\\.gradle\\daemon\\8.13\\com.example.gamerzone.app-debug-56:\\drawable_reddead.avif.flat",
+        "source": "C:\\Users\\rmuji\\.gradle\\daemon\\8.13\\com.example.gamerzone.app-main-58:\\drawable\\reddead.avif"
+    },
+    {
+        "merged": "C:\\Users\\rmuji\\.gradle\\daemon\\8.13\\com.example.gamerzone.app-debug-56:\\drawable_f1.jpg.flat",
+        "source": "C:\\Users\\rmuji\\.gradle\\daemon\\8.13\\com.example.gamerzone.app-main-58:\\drawable\\f1.jpg"
+    },
+    {
+        "merged": "C:\\Users\\rmuji\\.gradle\\daemon\\8.13\\com.example.gamerzone.app-debug-56:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\rmuji\\.gradle\\daemon\\8.13\\com.example.gamerzone.app-main-58:\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\rmuji\\.gradle\\daemon\\8.13\\com.example.gamerzone.app-debug-56:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\rmuji\\.gradle\\daemon\\8.13\\com.example.gamerzone.app-main-58:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\rmuji\\.gradle\\daemon\\8.13\\com.example.gamerzone.app-debug-56:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\rmuji\\.gradle\\daemon\\8.13\\com.example.gamerzone.app-main-58:\\mipmap-hdpi\\ic_launcher.webp"
     }
 ]

@@ -24,8 +24,6 @@ fun showAlert(
         }
     )
 }
-
-
 @Composable
 fun showConfirm(
     titulo:String,

@@ -47,6 +47,7 @@ import com.example.gamerzone.viewModel.RegistroViewModel
 class LoginScreen(private val navController: NavHostController? = null) {
 
     @Composable
+
     fun login() {
 
         val viewModel = viewModel<LoginViewModel>()
@@ -58,6 +59,7 @@ class LoginScreen(private val navController: NavHostController? = null) {
         if (nav == true) {
             navController?.navigate("inicio")
             viewModel.cambiarEstadoNavegacion()
+            verRegistro()
         }
 
 
@@ -163,28 +165,27 @@ class LoginScreen(private val navController: NavHostController? = null) {
             }
 
             Button(
-                onClick = { viewModel.registro() },
-                modifier = Modifier.fillMaxWidth()
+                onClick = { navController?.navigate("registro") }
+                // modifier = Modifier.fillMaxWidth()
             )
-            {
-                Text("Registrarse")
-            }
+                {
+                    Text("Registrarse")
+                }
         }
     }
 
-        fun registro() {
-            RegistroViewModel
-        }
+    @Composable
+    fun verLogin() {
+        LoginScreen().login()
+    }
+
+    @Composable
+    fun verRegistro() {
+        RegistroScreen().registro()
+        viewModel<RegistroViewModel>()
     }
 
 
-@Preview(showBackground = true)
-@Composable
-fun verLogin(){
-    LoginScreen().login()
 }
 
-@Composable
-fun verRegistro(){
-    val viewModel = viewModel<RegistroViewModel>()
-}
+

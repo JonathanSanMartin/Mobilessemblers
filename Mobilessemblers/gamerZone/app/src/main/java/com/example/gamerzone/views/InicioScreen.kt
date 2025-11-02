@@ -42,13 +42,21 @@ import com.example.gamerzone.models.Juegos
 
 class InicioScreen(private val navController: NavHostController? = null) {
 
-        @Composable
+    @Composable
         fun inicio(){
             var expandirMenu by remember { mutableStateOf(false) }
             var menuDerecha by remember { mutableStateOf(false) }
 
             var juegos = listOf<Juegos>(
-                Juegos("F1 2024",50000.0, R.drawable.f1)
+                Juegos("F1 2024",50000.0, R.drawable.f1),
+                Juegos("Minecraft",40000.0, R.drawable.minecraft),
+                Juegos("Rocket League",60000.0, R.drawable.rocketleague),
+                Juegos("FC 2026",60000.0, R.drawable.fc2026),
+                Juegos("PES",76000.0, R.drawable.pes),
+                Juegos("GTA V",56000.0, R.drawable.gtav),
+                Juegos("Red Dead Redemption",10000.0, R.drawable.reddead),
+                Juegos("Goat Simulator",10000.0, R.drawable.goat),
+                Juegos("Call of Duty",20000.0, R.drawable.cod)
             )
 
             BackHandler {  }
@@ -88,7 +96,10 @@ class InicioScreen(private val navController: NavHostController? = null) {
                                     Log.e("TAAAAG","ROJO")
 
                                 }) {
-                                    Text(text = "OPCION 1")
+                                    Text(text = "Mi cuenta")
+                                    Text(text = "Ayuda")
+                                    Text(text = "Cerrar sesión")
+                                    Text(text = "Acerca de")
                                 }
                             }
                         }

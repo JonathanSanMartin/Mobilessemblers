@@ -1,23 +1,23 @@
 package com.example.gamerzone.viewModel
 
 import android.util.Log
-import android.widget.EditText
+import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
 import androidx.lifecycle.ViewModel
-import com.example.gamerzone.R
+import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.gamerzone.models.LoginModel
 
-class LoginViewModel: ViewModel() {
+class LoginViewModel : ViewModel() {
 
-    var loginViewModel by mutableStateOf(LoginModel( "",""))
+    var loginViewModel by mutableStateOf(LoginModel("", ""))
 
-    fun cambiarCorreo(nuevoCorreo:String){
+    fun cambiarCorreo(nuevoCorreo: String) {
         loginViewModel = loginViewModel.copy(correo = nuevoCorreo)
     }
 
-    fun cambiarContrasena(nuevaContrasena:String){
+    fun cambiarContrasena(nuevaContrasena: String) {
         loginViewModel = loginViewModel.copy(contrasena = nuevaContrasena)
     }
 
@@ -30,14 +30,14 @@ class LoginViewModel: ViewModel() {
     var textoBtnAlerta by mutableStateOf("")
         private set
 
-    fun descartarAlerta(){
+    fun descartarAlerta() {
         mostrarAlerta = false
     }
 
     var navegacion by mutableStateOf(false)
         private set
 
-    fun cambiarEstadoNavegacion(){
+    fun cambiarEstadoNavegacion() {
         navegacion = false
     }
 
@@ -52,31 +52,30 @@ class LoginViewModel: ViewModel() {
     var textoBtnCancelar by mutableStateOf("")
         private set
 
-    fun btnAceptarConfirmar(){
+    fun btnAceptarConfirmar() {
         mostrarConfirmacion = false
     }
 
-    fun btnCancelarConfirmar(){
+    fun btnCancelarConfirmar() {
         mostrarConfirmacion = false
     }
 
-    fun terminarConfirmar(){
+    fun terminarConfirmar() {
         mostrarConfirmacion = false
     }
 
-    fun auth(){
-        Log.d("CORREO",loginViewModel.correo)
-        Log.d("CONTRASEÑA",loginViewModel.contrasena)
+    fun auth() {
+        Log.d("CORREO", loginViewModel.correo)
+        Log.d("CONTRASEÑA", loginViewModel.contrasena)
 
-        if(loginViewModel.correo == "1" && loginViewModel.contrasena == "1"){
+        if (loginViewModel.correo == "1" && loginViewModel.contrasena == "1") {
             navegacion = true
-
-        }else if(loginViewModel.correo.isBlank() || loginViewModel.contrasena.isBlank()){
+        } else if (loginViewModel.correo.isBlank() || loginViewModel.contrasena.isBlank()) {
             tituloAlerta = "Error de validación"
             mensajeAlerta = "El correo y la contraseña no pueden estar vacíos."
             textoBtnAlerta = "Aceptar"
-
-        }else{
+            mostrarAlerta = true
+        } else {
             tituloAlerta = "Error de credenciales"
             mensajeAlerta = "El correo o la contraseña no corresponden."
             textoBtnAlerta = "Aceptar"

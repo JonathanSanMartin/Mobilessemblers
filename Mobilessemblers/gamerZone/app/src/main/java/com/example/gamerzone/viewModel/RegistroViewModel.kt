@@ -36,10 +36,10 @@ class RegistroViewModel: ViewModel() {
         RegistroViewModel = RegistroViewModel.copy(confirmarContrasena = confirmarContrasena)
     }
 
-    fun cambiarTelefono(telefono: Int.Companion) {
-        RegistroViewModel = RegistroViewModel.copy()
-    }
 
+    fun cambiarTelefono(telefono: Int) {
+        RegistroViewModel = RegistroViewModel.copy(telefono = telefono)
+    }
 
     var mostrarAlerta by mutableStateOf(false)
         private set
@@ -135,6 +135,9 @@ class RegistroViewModel: ViewModel() {
     }
 }
 
+fun inicio (){
+
+}
 private fun Int.matches(int: kotlin.text.Regex): Boolean {
     println("borrar esto despues")
 return true}

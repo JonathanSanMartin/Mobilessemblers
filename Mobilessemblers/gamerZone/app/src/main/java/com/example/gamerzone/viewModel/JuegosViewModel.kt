@@ -53,7 +53,3 @@ class JuegosViewModel(private val repository: JuegosRepository) : ViewModel() {
         }
     }
 }
-
-private fun JuegosRepository.getAllProducts() {
-    TODO("Not yet implemented")
-}
