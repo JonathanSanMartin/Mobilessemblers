@@ -99,7 +99,7 @@ class RegistroViewModel: ViewModel() {
             mensajeAlerta = "El nombre no puede estar vacío."
             textoBtnAlerta = "Aceptar"
             mostrarAlerta = true
-        } else if (!RegistroViewModel.nombre.matches(Regex("^[A-Za-zÁÉÍÓÚáéíóúÑñ ]+$"))) {
+        } else if (!RegistroViewModel.nombre.matches(Regex("^[ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzÁÉÍÓÚáéíóúÑñ ]+$"))) {
             tituloAlerta = "Error de validación"
             mensajeAlerta = "El nombre tiene símbolos no permitidos."
             textoBtnAlerta = "Aceptar"
@@ -111,12 +111,12 @@ class RegistroViewModel: ViewModel() {
             mostrarAlerta = true
         } else if (RegistroViewModel.correo.isBlank() || RegistroViewModel.contrasena.isBlank()) {
             tituloAlerta = "Error de validación"
-            mensajeAlerta = "El correo y la contraseña no pueden estar vcíos."
+            mensajeAlerta = "El correo y/o la contraseña no pueden estar vacíos."
             textoBtnAlerta = "Aceptar"
             mostrarAlerta = true
-        } else if (RegistroViewModel.correo.matches(Regex("^[A-Za-z0-9._%+-]+@duoc\\.cl$")) || RegistroViewModel.correo.length <= 60) {
+        } else if (RegistroViewModel.correo.matches(Regex("^[ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789._%+-]+@duoc\\.cl$")) || RegistroViewModel.correo.length <= 60) {
             tituloAlerta = "Error de validación"
-            mensajeAlerta = "El correo debe ser mayor a 60 caracteres y ser duoc.cl"
+            mensajeAlerta = "El correo debe ser menor a 60 caracteres y ser del dominio duoc.cl"
             textoBtnAlerta = "Aceptar"
             mostrarAlerta = true
         } else if (RegistroViewModel.contrasena !== RegistroViewModel.confirmarContrasena) {
@@ -126,7 +126,7 @@ class RegistroViewModel: ViewModel() {
             mostrarAlerta = true
         }else if (RegistroViewModel.telefono.matches(Regex("^\\d+$"))){
             tituloAlerta = "Error de validación"
-            mensajeAlerta = "Solo números en el número de telefono"
+            mensajeAlerta = "Solo se permite ingresar números en el número de telefono"
             textoBtnAlerta = "Aceptar"
             mostrarAlerta = true
         } else {
