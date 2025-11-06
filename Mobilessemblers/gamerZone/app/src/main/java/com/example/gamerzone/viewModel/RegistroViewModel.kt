@@ -114,17 +114,17 @@ class RegistroViewModel: ViewModel() {
             mensajeAlerta = "El correo y/o la contraseña no pueden estar vacíos."
             textoBtnAlerta = "Aceptar"
             mostrarAlerta = true
-        } else if (RegistroViewModel.correo.matches(Regex("^[ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789._%+-]+@duoc\\.cl$")) || RegistroViewModel.correo.length <= 60) {
+        } else if (!RegistroViewModel.correo.matches(Regex("^[A-Za-z0-9._%+-]+@duoc\\.cl$")) || RegistroViewModel.correo.length > 60) {
             tituloAlerta = "Error de validación"
             mensajeAlerta = "El correo debe ser menor a 60 caracteres y ser del dominio duoc.cl"
             textoBtnAlerta = "Aceptar"
             mostrarAlerta = true
-        } else if (RegistroViewModel.contrasena !== RegistroViewModel.confirmarContrasena) {
+        } else if (RegistroViewModel.contrasena != RegistroViewModel.confirmarContrasena) {
             tituloAlerta = "Error de validación"
             mensajeAlerta = "Las contraseñas no coinciden."
             textoBtnAlerta = "Aceptar"
             mostrarAlerta = true
-        }else if (RegistroViewModel.telefono.matches(Regex("^\\d+$"))){
+        }else if (!RegistroViewModel.telefono.matches(Regex("^[0-9]"))){
             tituloAlerta = "Error de validación"
             mensajeAlerta = "Solo se permite ingresar números en el número de telefono"
             textoBtnAlerta = "Aceptar"

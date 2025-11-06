@@ -28,7 +28,7 @@ fun AppNavigation() {
         composable("camara") {
             CamaraScreen(navController).camara()
         }
-        composable("vibracion") {
+        composable("vibrar") {
             VibracionScreen(navController).vibracion()
         }
 
