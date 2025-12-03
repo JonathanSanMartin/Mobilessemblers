@@ -163,8 +163,8 @@ class LoginScreen(private val navController: NavHostController? = null) {
             }
 
             Button(
-                onClick = { navController?.navigate("registro") }
-                // modifier = Modifier.fillMaxWidth()
+                onClick = { navController?.navigate("registro") },
+                modifier = Modifier.fillMaxWidth()
             )
                 {
                     Text("Registrarse")

@@ -97,37 +97,37 @@ class RegistroViewModel: ViewModel() {
         if (RegistroViewModel.nombre.isEmpty()) {
             tituloAlerta = "Error de validación"
             mensajeAlerta = "El nombre no puede estar vacío."
-            textoBtnAlerta = "Aceptar"
+            textoBtnConfirmacion = "Aceptar"
             mostrarAlerta = true
         } else if (!RegistroViewModel.nombre.matches(Regex("^[ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzÁÉÍÓÚáéíóúÑñ ]+$"))) {
             tituloAlerta = "Error de validación"
             mensajeAlerta = "El nombre tiene símbolos no permitidos."
-            textoBtnAlerta = "Aceptar"
+            textoBtnConfirmacion = "Aceptar"
             mostrarAlerta = true
         } else if (RegistroViewModel.nombre.length > 100) {
             tituloAlerta = "Error de validación"
             mensajeAlerta = "El nombre es muy largo."
-            textoBtnAlerta = "Aceptar"
+            textoBtnConfirmacion = "Aceptar"
             mostrarAlerta = true
         } else if (RegistroViewModel.correo.isBlank() || RegistroViewModel.contrasena.isBlank()) {
             tituloAlerta = "Error de validación"
             mensajeAlerta = "El correo y/o la contraseña no pueden estar vacíos."
-            textoBtnAlerta = "Aceptar"
+            textoBtnConfirmacion = "Aceptar"
             mostrarAlerta = true
         } else if (!RegistroViewModel.correo.matches(Regex("^[A-Za-z0-9._%+-]+@duoc\\.cl$")) || RegistroViewModel.correo.length > 60) {
             tituloAlerta = "Error de validación"
             mensajeAlerta = "El correo debe ser menor a 60 caracteres y ser del dominio duoc.cl"
-            textoBtnAlerta = "Aceptar"
+            textoBtnConfirmacion = "Aceptar"
             mostrarAlerta = true
         } else if (RegistroViewModel.contrasena != RegistroViewModel.confirmarContrasena) {
             tituloAlerta = "Error de validación"
             mensajeAlerta = "Las contraseñas no coinciden."
-            textoBtnAlerta = "Aceptar"
+            textoBtnConfirmacion = "Aceptar"
             mostrarAlerta = true
         }else if (!RegistroViewModel.telefono.matches(Regex("^[0-9]"))){
             tituloAlerta = "Error de validación"
             mensajeAlerta = "Solo se permite ingresar números en el número de telefono"
-            textoBtnAlerta = "Aceptar"
+            textoBtnConfirmacion = "Aceptar"
             mostrarAlerta = true
         } else {
             navegacion = true
