@@ -1,6 +1,6 @@
 package com.example.gamerzone.models
 
-import com.squareup.moshi.Json
+/* import com.squareup.moshi.Json
 
 data class Juegos(
     @field:Json("id")
@@ -16,6 +16,15 @@ data class Juegos(
     val imagen: Int,
 )
 
+ */
+
+data class Juegos(
+    val id: Int,
+    val nombre: String,
+    val precio: Double,
+    val imagen: Int
+)
+
 data class JuegosState(
     val juegos: List<Juegos> = emptyList(),
     val id: Int? = null,
@@ -25,12 +34,12 @@ data class JuegosState(
 )
 
 data class JuegosAgregar (
-    @field:Json("nombre")
+    // @field:Json("nombre")
     val nombre: String,
 
-    @field:Json("precio")
+    // @field:Json("precio")
     val precio: Double,
 
-    @field:Json("imagen")
+    // @field:Json("imagen")
     val imagen: Int
 )

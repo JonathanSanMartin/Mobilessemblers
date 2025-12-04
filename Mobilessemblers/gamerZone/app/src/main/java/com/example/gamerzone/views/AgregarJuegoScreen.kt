@@ -23,7 +23,7 @@ import com.example.gamerzone.viewModel.JuegosViewModel
 class AgregarJuegoScreen (private val navController: NavHostController? = null) {
 }
     @Composable
-    fun agregarJuego (){
+    fun agregarJuego(){
         val juegosViewModel = viewModel<JuegosViewModel>()
 
         val nombre = juegosViewModel.state.nombre

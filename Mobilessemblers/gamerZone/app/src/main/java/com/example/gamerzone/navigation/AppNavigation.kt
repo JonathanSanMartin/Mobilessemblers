@@ -6,6 +6,7 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.example.gamerzone.views.AgregarJuegoScreen
 import com.example.gamerzone.views.CamaraScreen
+import com.example.gamerzone.views.EditarJuegoScreen
 import com.example.gamerzone.views.InicioScreen
 import com.example.gamerzone.views.LoginScreen
 import com.example.gamerzone.views.RegistroScreen
@@ -37,17 +38,18 @@ fun AppNavigation() {
             RegistroScreen(navController).registro()
         }
 
-        composable ("agregarJuegos"){
-            AgregarJuegoScreen().agregarJuego()
+        composable ("agregarJuego"){
+            AgregarJuegoScreen(navController).agregarJuego()
         }
 
         composable ("editarJuego/{id}"){backStackEntry ->
             val idString = backStackEntry.arguments?.getString("id")
             val id = idString?.toIntOrNull()?:0
-            EditarJuegoScreen(navController,id).editarVehiculo()
+            EditarJuegoScreen(navController, id).editarVehiculo()
         }
     }
 }
+
 
 
 
