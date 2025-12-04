@@ -26,21 +26,21 @@ interface JuegosService {
     }
 
     @GET("juegos")
-    suspend fun obtenerJuegos(): List<Juegos> {
+    suspend fun obtenerJuego(): List<Juegos> {
     }
 
     @GET("juegos/{id}")
-    suspend fun buscarJuegos(@Path("id") id: Int): List<Juegos> {
+    suspend fun buscarJuego(@Path("id") id: Int): List<Juegos> {
     }
 
     @POST("juegos")
-    suspend fun agregarJuegos(@Body auto: JuegosAgregar)
+    suspend fun agregarJuego(@Body auto: JuegosAgregar)
 
     @PUT("juegos")
-    suspend fun actualizarJuegos(@Body auto: Juegos)
+    suspend fun actualizarJuego(@Body auto: Juegos)
 
     @DELETE("juegos/{id}")
-    suspend fun eliminarJuegos(@Path("id") id: Int)
+    suspend fun eliminarJuego(@Path("id") id: Int)
 }
 
 

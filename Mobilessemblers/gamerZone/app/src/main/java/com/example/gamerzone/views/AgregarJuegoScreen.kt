@@ -44,7 +44,7 @@ class AgregarJuegoScreen (private val navController: NavHostController? = null) 
             )
             Spacer(Modifier.height(16.dp))
 
-            OutlinedTextField(
+            /* OutlinedTextField(
                 value = precio,
                 onValueChange = {juegosViewModel.cambiarPrecio(0.0)},
                 label = {Text("Precio")},
@@ -60,6 +60,8 @@ class AgregarJuegoScreen (private val navController: NavHostController? = null) 
             )
             Spacer(Modifier.height(16.dp))
         }
+
+             */
 
         Button(
             onClick = {juegosViewModel.agregarJuego()},
