@@ -1,4 +1,9 @@
 package com.example.gamerzone.models
 
-class Juegos(val nombre: String, val precio: Double, val imagen: Int) {
+import com.squareup.moshi.Json
+
+data class Juegos(
+    @field:J
+
+    val nombre: String, val precio: Double, val imagen: Int) {
 }
