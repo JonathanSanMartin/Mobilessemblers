@@ -1,10 +1,21 @@
 package com.example.gamerzone.repository
 
+import androidx.compose.ui.graphics.Path
 import androidx.compose.ui.graphics.vector.Path
-import com.example.gamerzone.models.Juegos
 import okhttp3.OkHttpClient
+import com.example.gamerzone.models.Juegos
+import com.example.gamerzone.models.JuegosAgregar
+/* import retrofit2.Retrofit
+import retrofit2.converter.moshi.MoshiConverterFactory
+import retrofit2.http.Body
+import retrofit2.http.DELETE
+import retrofit2.http.GET
+import retrofit2.http.POST
+import retrofit2.http.PUT
+import retrofit2.http.Path
+ */
 
-class JuegosService {
+interface JuegosService {
 
     companion object {
         val instance =
@@ -31,4 +42,5 @@ class JuegosService {
     @DELETE("juegos/{id}")
     suspend fun eliminarJuegos(@Path("id") id: Int)
 }
+
 

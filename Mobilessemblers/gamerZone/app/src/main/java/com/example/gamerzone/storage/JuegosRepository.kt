@@ -2,7 +2,7 @@ package com.example.gamerzone.storage
 
 import kotlinx.coroutines.flow.Flow
 class JuegosRepository (private val juegosDao: JuegosDao){
-    suspend fun insertProduct(product: com.example.gamerzone.models.Juegos): String {
+    suspend fun insertProduct(product: Unit): String {
         return ("test")
     }
 

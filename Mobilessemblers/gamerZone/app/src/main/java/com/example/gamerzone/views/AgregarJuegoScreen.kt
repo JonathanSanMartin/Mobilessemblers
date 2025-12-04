@@ -20,14 +20,14 @@ import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavHostController
 import com.example.gamerzone.viewModel.JuegosViewModel
 
-class AgregarJuegoScreen (private val navController: NavHostController? = null){
+class AgregarJuegoScreen (private val navController: NavHostController? = null) {
+}
     @Composable
-
     fun agregarJuego (){
         val juegosViewModel = viewModel<JuegosViewModel>()
 
         val nombre = juegosViewModel.state.nombre
-        val precio = juegosViewModel.state.modelo
+        val precio = juegosViewModel.state.precio
         val imagen = juegosViewModel.state.imagen
 
         Column (modifier = Modifier.fillMaxSize().padding(top = 40.dp, bottom = 30.dp, start = 20.dp, end = 20.dp),
@@ -46,7 +46,7 @@ class AgregarJuegoScreen (private val navController: NavHostController? = null){
 
             OutlinedTextField(
                 value = precio,
-                onValueChange = {juegosViewModel.cambiarPrecio(it)},
+                onValueChange = {juegosViewModel.cambiarPrecio(0.0)},
                 label = {Text("Precio")},
                 modifier = Modifier.fillMaxWidth()
             )
@@ -54,7 +54,7 @@ class AgregarJuegoScreen (private val navController: NavHostController? = null){
 
             OutlinedTextField(
                 value = imagen,
-                onValueChange = {juegosViewModel.cambiarImagen(it)},
+                onValueChange = {juegosViewModel.cambiarImagen(0)},
                 label = {Text("Imagen")},
                 modifier = Modifier.fillMaxWidth()
             )
