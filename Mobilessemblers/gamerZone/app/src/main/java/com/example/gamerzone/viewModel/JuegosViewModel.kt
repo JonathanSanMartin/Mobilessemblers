@@ -11,6 +11,8 @@ import com.example.gamerzone.models.JuegosAgregar
 import com.example.gamerzone.models.JuegosState
 import kotlinx.coroutines.launch
 
+private val ERROR.instance: Any
+
 class JuegosViewModel : ViewModel() {
 
     private val JuegosService = JuegosService.instance
@@ -40,7 +42,7 @@ class JuegosViewModel : ViewModel() {
     fun obtenerJuegos() {
         viewModelScope.launch {
             try {
-                val juegosObtenidos = JuegosService.obtenerJuegos()
+                val juegosObtenidos = JuegosService.obtenerJuego()
                 state = state.copy(juegos = juegosObtenidos)
             } catch (e: Exception) {
             }
@@ -66,7 +68,7 @@ class JuegosViewModel : ViewModel() {
                     imagen = state.imagen
                 )
 
-                JuegosService.agregarJuegos(nuevoJuego)
+                JuegosService.agregarJuego(nuevoJuego)
                 state = state.copy(
                     nombre = "",
                     precio = 0.0,

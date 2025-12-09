@@ -21,7 +21,7 @@ import androidx.navigation.NavHostController
 import com.example.gamerzone.models.Juegos
 import com.example.gamerzone.viewModel.JuegosViewModel
 
-class EditarJuegosScreen(private val navHostController: NavHostController? = null,
+class EditarJuegoScreen(private val navHostController: NavHostController? = null,
                                private val id:Int) {
 
     @Composable
@@ -54,7 +54,7 @@ class EditarJuegosScreen(private val navHostController: NavHostController? = nul
             )
             Spacer(Modifier.height(16.dp))
 
-            OutlinedTextField(
+            /* OutlinedTextField(
                 value = precio,
                 onValueChange = { JuegosViewModel.cambiarPrecio(0.0) },
                 label = { Text("Precio:") },
@@ -70,6 +70,7 @@ class EditarJuegosScreen(private val navHostController: NavHostController? = nul
             )
             Spacer(Modifier.height(16.dp))
 
+             */
             Button(
                 onClick = {
                     val JuegoActualizado = Juegos(
