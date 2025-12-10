@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.gamerzone.app-mergeDebugResources-55:/values-v28/values-v28.xml",
+            "outputFile": "com.example.gamerzone.app-mergeDebugResources-60:/values-v28/values-v28.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\cetecom\\.gradle\\caches\\8.13\\transforms\\b3c784550f567d18e7772334297c18c1\\transformed\\core-1.5.0\\res\\values-v28\\values.xml",
+                    "source": "C:\\Users\\cetecom\\.gradle\\caches\\8.13\\transforms\\654b967a3621f3094a41c4bfb1d1b1cd\\transformed\\core-1.5.0\\res\\values-v28\\values.xml",
                     "from": {
                         "startLines": "4,13",
                         "startColumns": "0,0",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\cetecom\\.gradle\\caches\\8.13\\transforms\\a65dfc37135eb0a10b3b5c4c3d45f67f\\transformed\\appcompat-1.6.1\\res\\values-v28\\values-v28.xml",
+                    "source": "C:\\Users\\cetecom\\.gradle\\caches\\8.13\\transforms\\bbf7fa789aea913cb7c0b068f78bcf6f\\transformed\\appcompat-1.6.1\\res\\values-v28\\values-v28.xml",
                     "from": {
                         "startLines": "2,3,4,8",
                         "startColumns": "4,4,4,4",

@@ -13,7 +13,7 @@ data class Juegos(
     val precio: Double,
 
     @field:Json("imagen")
-    val imagen: Int,
+    val imagen: String,
 )
 
 data class JuegosState(
@@ -21,7 +21,7 @@ data class JuegosState(
     val id: Int? = null,
     val nombre:String = "",
     val precio:Double = 0.0,
-    val imagen:Int = 0
+    val imagen:String = ""
 )
 
 data class JuegosAgregar (
@@ -32,5 +32,5 @@ data class JuegosAgregar (
     val precio: Double,
 
     @field:Json("imagen")
-    val imagen: Int
+    val imagen: String
 )

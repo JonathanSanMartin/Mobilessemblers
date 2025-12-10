@@ -1,100 +1,74 @@
 package com.example.gamerzone.views
 
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.material.*
-import androidx.compose.runtime.Composable
-import androidx.compose.runtime.getValue
+import androidx.compose.runtime.*
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
-import androidx.compose.ui.unit.sp
+import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavHostController
+import com.example.gamerzone.models.Juegos
 import com.example.gamerzone.viewModel.JuegosViewModel
+import coil.compose.rememberAsyncImagePainter
 
-class JuegosScreen(
-    private val navController: NavHostController? = null,
-    private val viewModel: JuegosViewModel
+
+@Composable
+fun JuegosScreen(
+    navController: NavHostController,
+    viewModel: JuegosViewModel = viewModel()
 ) {
+    val juegos by remember { derivedStateOf { viewModel.state.juegos } }
 
-    @Composable
-    fun JuegoScreen() {
-
-        val state = viewModel.state   // usa el estado completo
-
-        Column(
-            modifier = Modifier
-                .padding(16.dp)
-                .systemBarsPadding()
-        ) {
-
-            Text(
-                text = "Gestionar Juegos",
-                fontSize = 30.sp,
-                fontWeight = FontWeight.Bold,
-                modifier = Modifier
-                    .padding(16.dp)
-                    .fillMaxWidth()
-            )
-
-            // Nombre
-            OutlinedTextField(
-                value = state.nombre,
-                onValueChange = { viewModel.cambiarNombre(it) },
-                label = { Text("Nombre del juego") },
-                modifier = Modifier.fillMaxWidth()
-            )
-            Spacer(Modifier.height(8.dp))
-
-            // Precio
-            OutlinedTextField(
-                value = state.precio.toString(),
-                onValueChange = {
-                    val valor = it.toDoubleOrNull() ?: 0.0
-                    viewModel.cambiarPrecio(valor)
-                },
-                label = { Text("Precio") },
-                modifier = Modifier.fillMaxWidth(),
-                singleLine = true
-            )
-            Spacer(Modifier.height(8.dp))
-
-            // Guardar
-            Button(
-                onClick = { viewModel.agregarJuego() },
-                enabled = state.nombre.isNotBlank() && state.precio > 0,
-                modifier = Modifier.fillMaxWidth()
-            ) {
-                Text("Guardar juego")
-            }
-
-            Spacer(Modifier.height(24.dp))
-
-            Text(
-                text = "Listado de Juegos",
-                fontWeight = FontWeight.Bold,
-                fontSize = 20.sp
-            )
-
-            Spacer(Modifier.height(8.dp))
-
-            // Lista de juegos
-            LazyColumn(modifier = Modifier.fillMaxWidth()) {
-                items(state.juegos) { product ->
-
-                    Column(
-                        modifier = Modifier
-                            .fillMaxWidth()
-                            .padding(vertical = 4.dp)
-                    ) {
-
-                        Text("ID: ${product.id}", fontWeight = FontWeight.SemiBold)
-                        Text("Nombre: ${product.nombre}")
-                        Text("Precio: ${product.precio}")
+    Scaffold(
+        topBar = {
+            TopAppBar(
+                title = { Text("Lista de Juegos") },
+                actions = {
+                    Button(onClick = { navController.navigate("inicio") }) {
+                        Text("Volver")
                     }
-
-                    Divider()
+                }
+            )
+        }
+    ) { padding ->
+        LazyColumn(
+            modifier = Modifier
+                .fillMaxSize()
+                .padding(padding)
+        ) {
+            items(juegos) { juego: Juegos ->
+                Card(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(8.dp),
+                    elevation = 4.dp
+                ) {
+                    Row(
+                        verticalAlignment = Alignment.CenterVertically,
+                        modifier = Modifier.padding(8.dp)
+                    ) {
+                        Image(
+                            painter = rememberAsyncImagePainter (juego.imagen),
+                            contentDescription = "Imagen Juego",
+                            modifier = Modifier.size(60.dp)
+                        )
+                        Spacer(modifier = Modifier.width(16.dp))
+                        Column(modifier = Modifier.weight(1f)) {
+                            Text(text = "Nombre: ${juego.nombre}")
+                            Text(text = "Precio: ${juego.precio}")
+                        }
+                        Button(onClick = { navController.navigate("editarJuego/${juego.id}") }) {
+                            Text("Editar")
+                        }
+                        Spacer(modifier = Modifier.width(8.dp))
+                        Button(onClick = { viewModel.eliminarJuego(juego.id) }) {
+                            Text("Eliminar")
+                        }
+                    }
                 }
             }
         }

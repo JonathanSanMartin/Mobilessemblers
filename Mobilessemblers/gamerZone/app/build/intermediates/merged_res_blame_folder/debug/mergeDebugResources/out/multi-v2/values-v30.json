@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.gamerzone.app-mergeDebugResources-55:/values-v30/values-v30.xml",
+            "outputFile": "com.example.gamerzone.app-mergeDebugResources-60:/values-v30/values-v30.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\cetecom\\.gradle\\caches\\8.13\\transforms\\c2424caba0418aa06e5f4266bfb74281\\transformed\\material3-release\\res\\values-v30\\values-v30.xml",
+                    "source": "C:\\Users\\cetecom\\.gradle\\caches\\8.13\\transforms\\fe1f6a2c4869ab5975488c2c99dfb900\\transformed\\material3-release\\res\\values-v30\\values-v30.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

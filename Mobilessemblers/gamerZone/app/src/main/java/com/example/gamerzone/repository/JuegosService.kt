@@ -17,7 +17,7 @@ interface JuegosService {
 
     companion object {
         val instance =
-            Retrofit.Builder().baseUrl("http://10.0.2.2:8080/")
+            Retrofit.Builder().baseUrl("https://6939f53fc8d59937aa0970ec.mockapi.io/api/")
                 .addConverterFactory(MoshiConverterFactory.create())
                 .client(OkHttpClient.Builder().build())
                 .build().create(JuegosService::class.java)

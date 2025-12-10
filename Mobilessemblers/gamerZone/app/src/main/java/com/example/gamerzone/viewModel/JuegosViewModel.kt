@@ -12,9 +12,7 @@ import com.example.gamerzone.repository.JuegosService
 import kotlinx.coroutines.launch
 
 class JuegosViewModel : ViewModel() {
-
     private val service: JuegosService = JuegosService.instance
-
     var state by mutableStateOf(JuegosState())
 
     init {
@@ -29,12 +27,8 @@ class JuegosViewModel : ViewModel() {
         state = state.copy(precio = nuevoPrecio)
     }
 
-    fun cambiarImagen(nuevaImagen: Int) {
+    fun cambiarImagen(nuevaImagen: String) {
         state = state.copy(imagen = nuevaImagen)
-    }
-
-    fun cambiarId(nuevaId: Int) {
-        state = state.copy(id = nuevaId)
     }
 
     fun obtenerJuegos() {
@@ -42,71 +36,50 @@ class JuegosViewModel : ViewModel() {
             try {
                 val juegosObtenidos = service.obtenerJuego()
                 state = state.copy(juegos = juegosObtenidos)
-            } catch (e: Exception) {
-            }
+            } catch (e: Exception) { }
         }
     }
 
-    fun agregarJuego() {
-        viewModelScope.launch {
-            try {
-                // val imagen = state.imagen.toIntOrNull() ?: 0
-
-                val nuevoJuego = JuegosAgregar(
-                    nombre = state.nombre,
-                    precio = state.precio,
-                    imagen = state.imagen
-                )
-
-                service.agregarJuego(nuevoJuego)
-                state = state.copy(
-                    nombre = "",
-                    precio = 0.0,
-                    imagen = 0
-                )
-            } catch (e: Exception) {
-            }
-        }
-    }
     fun buscarJuego(id: Int){
         viewModelScope.launch {
             try {
                 val juegoEncontrado = service.buscarJuego(id)
                 cambiarNombre(juegoEncontrado.nombre)
                 cambiarPrecio(juegoEncontrado.precio)
-                cambiarId(juegoEncontrado.id)
             }catch (e: Exception){
             }
         }
     }
-
-    fun actualizarJuego (juego: Juegos){
-        state = state.copy(
-            nombre = juego.nombre,
-            precio = juego.precio,
-            imagen = juego.imagen
-        )
+    fun agregarJuego() {
         viewModelScope.launch {
             try {
-                val response = JuegosService.instance.actualizarJuego(juego)
-                // message.value = ("Se actualizó juego correctamente")
+                val nuevoJuego = JuegosAgregar(
+                    nombre = state.nombre,
+                    precio = state.precio,
+                    imagen = state.imagen
+                )
+                service.agregarJuego(nuevoJuego)
+                state = state.copy(nombre = "", precio = 0.0, imagen = "")
                 obtenerJuegos()
-            } catch (e: Exception) {
-                // message.value = ("Error al actualizar juego: ${e.message}")
-            }
+            } catch (e: Exception) { }
         }
     }
 
-    fun eliminarJuego (id:Int){
+    fun actualizarJuego(juego: Juegos) {
         viewModelScope.launch {
-            try{
-                if (id != null){
-                    service.eliminarJuego(id)
-                }
+            try {
+                service.actualizarJuego(juego)
                 obtenerJuegos()
-            }catch (e: Exception){
+            } catch (e: Exception) { }
+        }
+    }
 
-            }
+    fun eliminarJuego(id: Int) {
+        viewModelScope.launch {
+            try {
+                service.eliminarJuego(id)
+                obtenerJuegos()
+            } catch (e: Exception) { }
         }
     }
 }
