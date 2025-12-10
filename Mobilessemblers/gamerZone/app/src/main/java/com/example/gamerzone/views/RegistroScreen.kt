@@ -181,7 +181,7 @@ class RegistroScreen(private val navController: NavHostController? = null) {
             Spacer(modifier = Modifier.height(16.dp))
 
             Button(
-                onClick = { viewModel.registro() },
+                onClick = { viewModel.juegos() },
                 modifier = Modifier.fillMaxWidth()
             )
             {
@@ -196,6 +196,10 @@ class RegistroScreen(private val navController: NavHostController? = null) {
                 Text("Atrás")
             }
         }
+    }
+
+    private fun RegistroViewModel.juegos() {
+        navController?.navigate("juegos")
     }
 
     private fun RegistroViewModel.login() {

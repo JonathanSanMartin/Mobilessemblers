@@ -20,35 +20,44 @@ fun AppNavigation() {
         navController = navController,
         startDestination = "login"
     ) {
+
         composable("login") {
             LoginScreen(navController).login()
         }
 
-        composable("inicio") {
+        // INICIO. pantalla principal de juegos (luego de login)
+        composable("juegos") {
             InicioScreen(navController).inicio()
         }
-        composable("camara") {
-            CamaraScreen(navController).camara()
-        }
-        composable("vibrar") {
-            VibracionScreen(navController).vibracion()
+
+        // agregar juego
+        composable("agregarJuego") {
+            AgregarJuegoScreen(navController).agregarJuego()
         }
 
+        //editar juego
+        composable("editarJuego/{id}") { backStackEntry ->
+            val idString = backStackEntry.arguments?.getString("id")
+            val id = idString?.toIntOrNull() ?: 0
+            EditarJuegoScreen(navController, id).editarJuego()
+        }
+
+        // registrarse
         composable("registro") {
             RegistroScreen(navController).registro()
         }
 
-        composable ("agregarJuego"){
-            AgregarJuegoScreen(navController).agregarJuego()
+        // cámara, vibración
+        composable("camara") {
+            CamaraScreen(navController).camara()
         }
 
-        composable ("editarJuego/{id}"){backStackEntry ->
-            val idString = backStackEntry.arguments?.getString("id")
-            val id = idString?.toIntOrNull()?:0
-            EditarJuegoScreen(navController, id).editarJuego()
+        composable("vibrar") {
+            VibracionScreen(navController).vibracion()
         }
     }
 }
+
 
 
 

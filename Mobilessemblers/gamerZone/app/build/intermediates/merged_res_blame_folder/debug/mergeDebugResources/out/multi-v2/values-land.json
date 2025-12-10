@@ -4,7 +4,7 @@
             "outputFile": "com.example.gamerzone.app-mergeDebugResources-55:/values-land/values-land.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\rmuji\\.gradle\\caches\\8.13\\transforms\\a65dfc37135eb0a10b3b5c4c3d45f67f\\transformed\\appcompat-1.6.1\\res\\values-land\\values-land.xml",
+                    "source": "C:\\Users\\cetecom\\.gradle\\caches\\8.13\\transforms\\a65dfc37135eb0a10b3b5c4c3d45f67f\\transformed\\appcompat-1.6.1\\res\\values-land\\values-land.xml",
                     "from": {
                         "startLines": "2,3,4",
                         "startColumns": "4,4,4",

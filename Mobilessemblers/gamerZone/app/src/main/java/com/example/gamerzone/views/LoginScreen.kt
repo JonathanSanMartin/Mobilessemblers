@@ -54,14 +54,14 @@ class LoginScreen(private val navController: NavHostController? = null) {
 
         val nav = viewModel.navegacion
 
-        if (nav == true) {
-            navController?.navigate("inicio")
+        if (nav) {
+            navController?.navigate("juegos")
             viewModel.cambiarEstadoNavegacion()
             verRegistro()
         }
 
 
-        if (viewModel.mostrarAlerta == true) {
+        if (viewModel.mostrarAlerta) {
             showAlert(
                 titulo = viewModel.tituloAlerta,
                 mensaje = viewModel.mensajeAlerta,
@@ -71,7 +71,7 @@ class LoginScreen(private val navController: NavHostController? = null) {
             )
         }
 
-        if (viewModel.mostrarConfirmacion == true) {
+        if (viewModel.mostrarConfirmacion) {
             showConfirm(
                 titulo = viewModel.tituloConfirmacion,
                 mensaje = viewModel.mensajeConfirmacion,
@@ -82,7 +82,6 @@ class LoginScreen(private val navController: NavHostController? = null) {
                 eventoTerminarAlerta = { viewModel.terminarConfirmar() }
             )
         }
-
 
         val trancisionInfinita = rememberInfiniteTransition()
 

@@ -76,7 +76,7 @@ class LoginViewModel : ViewModel() {
         } else {
             tituloAlerta = "Error de credenciales"
             mensajeAlerta = "El correo o la contraseña no corresponden."
-            textoBtnAlerta = "Aceptar"
+            textoBtnConfirmacion = "Aceptar"
             mostrarAlerta = true
         }
     }
