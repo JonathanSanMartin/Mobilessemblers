@@ -37,9 +37,110 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.example.gamerzone.R
-import com.example.gamerzone.models.Juegos
+import androidx.compose.material.*
+import androidx.lifecycle.viewmodel.compose.viewModel
+import com.example.gamerzone.viewModel.JuegosViewModel
+class InicioScreen(private val navController: NavHostController? = null) {
 
+    @Composable
+    fun inicio() {
+
+        val juegosViewModel = viewModel<JuegosViewModel>()
+        val juegos = juegosViewModel.state.juegos
+
+        var expandirMenu by remember { mutableStateOf(false) }
+        var menuDerecha by remember { mutableStateOf(false) }
+
+        BackHandler { }
+
+        Scaffold(
+            topBar = {
+                TopAppBar(
+                    modifier = Modifier.windowInsetsPadding(WindowInsets.statusBars),
+                    title = { Text("Juegos") },
+                    navigationIcon = {
+                        IconButton(onClick = { expandirMenu = true }) {
+                            Icon(Icons.Filled.Menu, contentDescription = "Menu")
+                        }
+                        DropdownMenu(
+                            expanded = expandirMenu,
+                            onDismissRequest = { expandirMenu = false }
+                        ) {
+                            DropdownMenuItem(onClick = {
+                                navController?.navigate("agregarJuego")
+                                expandirMenu = false
+                            }) {
+                                Text("Agregar juego")
+                            }
+                        }
+                    },
+                    actions = {
+                        IconButton(onClick = { menuDerecha = true }) {
+                            Icon(Icons.Filled.MoreVert, contentDescription = "Menu derecha")
+                        }
+                        DropdownMenu(
+                            expanded = menuDerecha,
+                            onDismissRequest = { menuDerecha = false }
+                        ) {
+                            DropdownMenuItem(onClick = {}) { Text("Mi cuenta") }
+                            DropdownMenuItem(onClick = {}) { Text("Ayuda") }
+                            DropdownMenuItem(onClick = {}) { Text("Cerrar sesión") }
+                        }
+                    }
+                )
+            }
+        ) { innerPadding ->
+            Column(modifier = Modifier.padding(innerPadding)) {
+
+                LazyColumn {
+                    items(juegos) { j ->
+                        Card(
+                            modifier = Modifier
+                                .fillMaxWidth()
+                                .padding(8.dp),
+                            elevation = 4.dp
+                        ) {
+                            Row(
+                                verticalAlignment = Alignment.CenterVertically,
+                                modifier = Modifier.padding(8.dp)
+                            ) {
+                                Image(
+                                    painter = painterResource(id = j.imagen),
+                                    contentDescription = "Imagen Juego",
+                                    modifier = Modifier.height(60.dp)
+                                )
+                                Spacer(Modifier.width(16.dp))
+
+                                Column(
+                                    modifier = Modifier
+                                        .weight(1f)
+                                        .padding(end = 16.dp)
+                                ) {
+                                    Text(text = "Nombre: ${j.nombre}")
+                                    Text(text = "Precio: ${j.precio}")
+                                }
+
+                                Button(onClick = {
+                                    navController?.navigate("editarJuego/${j.id}")
+                                }) {
+                                    Text("Editar")
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@Preview
+@Composable
+fun verInicio() {
+    InicioScreen().inicio()
+}
+
+/*
 class InicioScreen(private val navController: NavHostController? = null) {
 
     @Composable
@@ -143,3 +244,5 @@ class InicioScreen(private val navController: NavHostController? = null) {
 fun verInicio(){
     InicioScreen().inicio()
 }
+
+ */

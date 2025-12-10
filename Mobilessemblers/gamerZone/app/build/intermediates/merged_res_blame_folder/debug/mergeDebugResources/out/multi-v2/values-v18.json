@@ -1,10 +1,29 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.gamerzone.app-mergeDebugResources-53:/values-v18/values-v18.xml",
+            "outputFile": "com.example.gamerzone.app-mergeDebugResources-55:/values-v18/values-v18.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Cetecom\\.gradle\\caches\\8.13\\transforms\\42ad99b97d3d6c1108203906ef6f14ee\\transformed\\appcompat-1.6.1\\res\\values-v18\\values-v18.xml",
+                    "source": "C:\\Users\\rmuji\\.gradle\\caches\\8.13\\transforms\\b3c784550f567d18e7772334297c18c1\\transformed\\core-1.5.0\\res\\values-v18\\values.xml",
+                    "from": {
+                        "startLines": "4,12",
+                        "startColumns": "0,0",
+                        "startOffsets": "180,596",
+                        "endLines": "11,19",
+                        "endColumns": "8,8",
+                        "endOffsets": "595,1009"
+                    },
+                    "to": {
+                        "startLines": "3,11",
+                        "startColumns": "4,4",
+                        "startOffsets": "104,524",
+                        "endLines": "10,18",
+                        "endColumns": "8,8",
+                        "endOffsets": "519,937"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\rmuji\\.gradle\\caches\\8.13\\transforms\\a65dfc37135eb0a10b3b5c4c3d45f67f\\transformed\\appcompat-1.6.1\\res\\values-v18\\values-v18.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

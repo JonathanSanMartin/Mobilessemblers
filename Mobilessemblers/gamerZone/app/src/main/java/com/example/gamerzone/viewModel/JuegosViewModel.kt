@@ -1,6 +1,5 @@
 package com.example.gamerzone.viewModel
 
-import android.R.attr.id
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
@@ -9,13 +8,12 @@ import androidx.lifecycle.viewModelScope
 import com.example.gamerzone.models.Juegos
 import com.example.gamerzone.models.JuegosAgregar
 import com.example.gamerzone.models.JuegosState
+import com.example.gamerzone.repository.JuegosService
 import kotlinx.coroutines.launch
-
-private val ERROR.instance: Any
 
 class JuegosViewModel : ViewModel() {
 
-    private val JuegosService = JuegosService.instance
+    private val service: JuegosService = JuegosService.instance
 
     var state by mutableStateOf(JuegosState())
 
@@ -42,19 +40,11 @@ class JuegosViewModel : ViewModel() {
     fun obtenerJuegos() {
         viewModelScope.launch {
             try {
-                val juegosObtenidos = JuegosService.obtenerJuego()
+                val juegosObtenidos = service.obtenerJuego()
                 state = state.copy(juegos = juegosObtenidos)
             } catch (e: Exception) {
             }
         }
-    }
-
-    private fun JuegosState.copy(
-        nombre: String,
-        precio: String,
-        imagen: String
-    ): JuegosState {
-        return TODO("Provide the return value")
     }
 
     fun agregarJuego() {
@@ -68,7 +58,7 @@ class JuegosViewModel : ViewModel() {
                     imagen = state.imagen
                 )
 
-                JuegosService.agregarJuego(nuevoJuego)
+                service.agregarJuego(nuevoJuego)
                 state = state.copy(
                     nombre = "",
                     precio = 0.0,
@@ -82,7 +72,7 @@ class JuegosViewModel : ViewModel() {
     fun buscarJuego(id: Int){
         viewModelScope.launch {
             try {
-                val juegoEncontrado = JuegosService.buscarJuego(id)
+                val juegoEncontrado = service.buscarJuego(id)
                 cambiarNombre(juegoEncontrado.nombre)
                 cambiarPrecio(juegoEncontrado.precio)
                 cambiarId(juegoEncontrado.id)
@@ -91,16 +81,19 @@ class JuegosViewModel : ViewModel() {
         }
     }
 
-    fun actualizarJuego (juegos: Juegos){
+    fun actualizarJuego (juego: Juegos){
         state = state.copy(
-            nombre = juegos.nombre,
-            precio = juegos.precio,
-            imagen = juegos.imagen
+            nombre = juego.nombre,
+            precio = juego.precio,
+            imagen = juego.imagen
         )
         viewModelScope.launch {
             try {
-                JuegosService.actualizarJuego(juegos)
-            }catch (e: Exception){
+                val response = JuegosService.instance.actualizarJuego(juego)
+                // message.value = ("Se actualizó juego correctamente")
+                obtenerJuegos()
+            } catch (e: Exception) {
+                // message.value = ("Error al actualizar juego: ${e.message}")
             }
         }
     }
@@ -109,7 +102,7 @@ class JuegosViewModel : ViewModel() {
         viewModelScope.launch {
             try{
                 if (id != null){
-                    JuegosService.eliminarJuego(id)
+                    service.eliminarJuego(id)
                 }
                 obtenerJuegos()
             }catch (e: Exception){

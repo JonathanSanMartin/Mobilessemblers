@@ -45,11 +45,10 @@ fun AppNavigation() {
         composable ("editarJuego/{id}"){backStackEntry ->
             val idString = backStackEntry.arguments?.getString("id")
             val id = idString?.toIntOrNull()?:0
-            EditarJuegoScreen(navController, id).editarVehiculo()
+            EditarJuegoScreen(navController, id).editarJuego()
         }
     }
 }
-
 
 
 

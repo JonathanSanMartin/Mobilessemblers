@@ -143,8 +143,6 @@ class CamaraScreen(private val navController: NavController? = null) {
                         modifier = Modifier.size(500.dp)
                     )
                 }
-
-
             }
         }
     }

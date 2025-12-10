@@ -10,9 +10,7 @@ import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.launch
 
-private val ProductoViewModel.juego: Unit
-
-class ProductoViewModel(private val repository: JuegosRepository) : ViewModel() {
+/* class ProductoViewModel(private val repository: JuegosRepository) : ViewModel() {
 
     private val _id = MutableStateFlow("")
     val id: StateFlow<String> = _id
@@ -46,10 +44,12 @@ class ProductoViewModel(private val repository: JuegosRepository) : ViewModel() 
             price = priceDouble
         )
         viewModelScope.launch {
-            repository.insertProduct(juego)
+            repository.insertProduct(juegos)
 
             _price.value = ""
             _name.value = ""
         }
     }
 }
+
+ */

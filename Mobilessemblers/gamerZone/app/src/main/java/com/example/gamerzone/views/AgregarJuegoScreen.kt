@@ -7,6 +7,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+//noinspection UsingMaterialAndMaterial3Libraries
 import androidx.compose.material.Button
 //noinspection UsingMaterialAndMaterial3Libraries
 import androidx.compose.material.Text
@@ -20,57 +21,63 @@ import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavHostController
 import com.example.gamerzone.viewModel.JuegosViewModel
 
-class AgregarJuegoScreen (private val navController: NavHostController? = null) {
-}
+class AgregarJuegoScreen(private val navController: NavHostController? = null) {
+
     @Composable
-    fun agregarJuego(){
+    fun agregarJuego() {
         val juegosViewModel = viewModel<JuegosViewModel>()
 
         val nombre = juegosViewModel.state.nombre
         val precio = juegosViewModel.state.precio
         val imagen = juegosViewModel.state.imagen
 
-        Column (modifier = Modifier.fillMaxSize().padding(top = 40.dp, bottom = 30.dp, start = 20.dp, end = 20.dp),
+        Column(
+            modifier = Modifier
+                .fillMaxSize()
+                .padding(top = 40.dp, bottom = 30.dp, start = 20.dp, end = 20.dp),
             verticalArrangement = Arrangement.Top
-        ){
+        ) {
             Text(text = "Agregar juego", fontSize = 40.sp)
-            Spacer (Modifier.height(16.dp))
+            Spacer(Modifier.height(16.dp))
 
             OutlinedTextField(
                 value = nombre,
-                onValueChange = {juegosViewModel.cambiarNombre(it)},
-                label = {Text("Nombre del juego")},
-                modifier = Modifier.fillMaxWidth()
-            )
-            Spacer(Modifier.height(16.dp))
-
-            /* OutlinedTextField(
-                value = precio,
-                onValueChange = {juegosViewModel.cambiarPrecio(0.0)},
-                label = {Text("Precio")},
+                onValueChange = { juegosViewModel.cambiarNombre(it) },
+                label = { Text("Nombre del juego") },
                 modifier = Modifier.fillMaxWidth()
             )
             Spacer(Modifier.height(16.dp))
 
             OutlinedTextField(
-                value = imagen,
-                onValueChange = {juegosViewModel.cambiarImagen(0)},
-                label = {Text("Imagen")},
+                value = precio.toString(),
+                onValueChange = { juegosViewModel.cambiarPrecio(it.toDoubleOrNull() ?: 0.0) },
+                label = { Text("Precio") },
                 modifier = Modifier.fillMaxWidth()
             )
             Spacer(Modifier.height(16.dp))
-        }
 
-             */
+            OutlinedTextField(
+                value = imagen.toString(),
+                onValueChange = { juegosViewModel.cambiarImagen(it.toIntOrNull() ?: 0) },
+                label = { Text("Imagen") },
+                modifier = Modifier.fillMaxWidth()
+            )
+            Spacer(Modifier.height(16.dp))
 
-        Button(
-            onClick = {juegosViewModel.agregarJuego()},
-            modifier = Modifier.fillMaxWidth()
-        ) {
-            Text("Agregar Juego")
+            Button(
+                onClick = {
+                    juegosViewModel.cambiarNombre(nombre)
+                    juegosViewModel.cambiarPrecio(precio)
+                    juegosViewModel.cambiarImagen(imagen)
+                    juegosViewModel.agregarJuego() },
+                modifier = Modifier.fillMaxWidth()
+            ) {
+                Text("Agregar Juego")
+            }
         }
     }
 }
+
 
 @Preview(showBackground = true)
 @Composable
