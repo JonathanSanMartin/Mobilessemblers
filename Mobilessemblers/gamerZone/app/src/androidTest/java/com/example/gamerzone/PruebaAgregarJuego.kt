@@ -16,15 +16,16 @@ class PruebaAgregarJuego {
     val composableRule = createComposeRule()
 
     @Test
-    fun probarAgregarJuegoApi(){
+    fun probarAgregarJuegoApi() {
 
         composableRule.setContent {
             AgregarJuegoScreen().agregarJuego()
         }
-            composableRule.onNodeWithText("Nombre").performTextInput("Testing")
-            composableRule.onNodeWithText("Precio").performTextInput("Testing")
-            composableRule.onNodeWithText("Imagen").performTextInput("Testing")
+        composableRule.onNodeWithText("Nombre").performTextInput("Testing")
+        composableRule.onNodeWithText("Precio").performTextInput("Testing")
+        composableRule.onNodeWithText("Imagen").performTextInput("Testing")
 
-            composableRule.onNode(hasText("Agregar juego") and hasClickAction()).assertExists().performClick()
-        }
+        composableRule.onNode(hasText("Agregar juego") and hasClickAction()).assertExists()
+            .performClick()
+    }
 }
