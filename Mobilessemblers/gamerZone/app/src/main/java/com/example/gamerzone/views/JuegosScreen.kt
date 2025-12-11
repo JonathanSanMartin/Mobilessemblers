@@ -13,7 +13,6 @@ import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavHostController
 import com.example.gamerzone.models.Juegos
 import com.example.gamerzone.viewModel.JuegosViewModel
-import coil.compose.rememberAsyncImagePainter
 
 
 @Composable
@@ -40,7 +39,7 @@ fun JuegosScreen(
                 .fillMaxSize()
                 .padding(padding)
         ) {
-            items(juegos) { juego: Juegos ->
+            items(juegos) {juego: Juegos ->
                 Card(
                     modifier = Modifier
                         .fillMaxWidth()
@@ -48,25 +47,31 @@ fun JuegosScreen(
                     elevation = 4.dp
                 ) {
                     Row(
-                        verticalAlignment = Alignment.CenterVertically,
-                        modifier = Modifier.padding(8.dp)
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .padding(8.dp),
+                        verticalAlignment = Alignment.CenterVertically
                     ) {
-                        Image(
-                            painter = rememberAsyncImagePainter (juego.imagen),
-                            contentDescription = "Imagen Juego",
-                            modifier = Modifier.size(60.dp)
-                        )
-                        Spacer(modifier = Modifier.width(16.dp))
-                        Column(modifier = Modifier.weight(1f)) {
+
+                        Box(
+                            modifier = Modifier
+                                .size(60.dp)
+                                .padding(end = 12.dp)
+                        ) {
+                        }
+
+                        Column(
+                            modifier = Modifier.weight(1f)
+                        ) {
                             Text(text = "Nombre: ${juego.nombre}")
                             Text(text = "Precio: ${juego.precio}")
                         }
-                        Button(onClick = { navController.navigate("editarJuego/${juego.id}") }) {
+
+                        Button(
+                            onClick = { navController.navigate("editarJuego/${juego.id}") },
+                            modifier = Modifier.padding(start = 12.dp)
+                        ) {
                             Text("Editar")
-                        }
-                        Spacer(modifier = Modifier.width(8.dp))
-                        Button(onClick = { viewModel.eliminarJuego(juego.id) }) {
-                            Text("Eliminar")
                         }
                     }
                 }

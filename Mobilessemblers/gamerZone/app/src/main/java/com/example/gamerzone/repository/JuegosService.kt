@@ -30,10 +30,10 @@ interface JuegosService {
     suspend fun buscarJuego(@Path("id") id: Int): Juegos
 
     @POST("juegos")
-    suspend fun agregarJuego(@Body juego: JuegosAgregar)
+    suspend fun agregarJuego(@Body juego: JuegosAgregar): Juegos
 
     @PUT("juegos/{id}")
-    suspend fun actualizarJuego(@Body juego: Juegos)
+    suspend fun actualizarJuego(@Path("id") id: Int, @Body juego: String)
 
     @DELETE("juegos/{id}")
     suspend fun eliminarJuego(@Path("id") id: Int)

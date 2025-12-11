@@ -1,106 +1,126 @@
 [
     {
-        "merged": "com.example.gamerzone.app-release-57:/mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "com.example.gamerzone.app-main-58:/mipmap-hdpi/ic_launcher.webp"
+        "merged": "com.example.gamerzone.app-release-60:/mipmap-xxhdpi_ic_launcher_foreground.webp.flat",
+        "source": "com.example.gamerzone.app-main-61:/mipmap-xxhdpi/ic_launcher_foreground.webp"
     },
     {
-        "merged": "com.example.gamerzone.app-release-57:/drawable_fc2026.jpg.flat",
-        "source": "com.example.gamerzone.app-main-58:/drawable/fc2026.jpg"
+        "merged": "com.example.gamerzone.app-release-60:/drawable_imagenlogin.png.flat",
+        "source": "com.example.gamerzone.app-main-61:/drawable/imagenlogin.png"
     },
     {
-        "merged": "com.example.gamerzone.app-release-57:/mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "com.example.gamerzone.app-main-58:/mipmap-xxhdpi/ic_launcher.webp"
+        "merged": "com.example.gamerzone.app-release-60:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.gamerzone.app-main-61:/mipmap-xxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "com.example.gamerzone.app-release-57:/drawable_minecraft.jpg.flat",
-        "source": "com.example.gamerzone.app-main-58:/drawable/minecraft.jpg"
+        "merged": "com.example.gamerzone.app-release-60:/drawable_minecraft.jpg.flat",
+        "source": "com.example.gamerzone.app-main-61:/drawable/minecraft.jpg"
     },
     {
-        "merged": "com.example.gamerzone.app-release-57:/drawable_rocketleague.webp.flat",
-        "source": "com.example.gamerzone.app-main-58:/drawable/rocketleague.webp"
+        "merged": "com.example.gamerzone.app-release-60:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.example.gamerzone.app-main-61:/mipmap-mdpi/ic_launcher.webp"
     },
     {
-        "merged": "com.example.gamerzone.app-release-57:/mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "com.example.gamerzone.app-main-58:/mipmap-mdpi/ic_launcher.webp"
+        "merged": "com.example.gamerzone.app-release-60:/drawable_fc2026.jpg.flat",
+        "source": "com.example.gamerzone.app-main-61:/drawable/fc2026.jpg"
     },
     {
-        "merged": "com.example.gamerzone.app-release-57:/drawable_gtav.webp.flat",
-        "source": "com.example.gamerzone.app-main-58:/drawable/gtav.webp"
+        "merged": "com.example.gamerzone.app-release-60:/mipmap-xhdpi_ic_launcher_foreground.webp.flat",
+        "source": "com.example.gamerzone.app-main-61:/mipmap-xhdpi/ic_launcher_foreground.webp"
     },
     {
-        "merged": "com.example.gamerzone.app-release-57:/xml_data_extraction_rules.xml.flat",
-        "source": "com.example.gamerzone.app-main-58:/xml/data_extraction_rules.xml"
+        "merged": "com.example.gamerzone.app-release-60:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.gamerzone.app-main-61:/mipmap-xxxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "com.example.gamerzone.app-release-57:/mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "com.example.gamerzone.app-main-58:/mipmap-xxxhdpi/ic_launcher.webp"
+        "merged": "com.example.gamerzone.app-release-60:/mipmap-xxxhdpi_ic_launcher_foreground.webp.flat",
+        "source": "com.example.gamerzone.app-main-61:/mipmap-xxxhdpi/ic_launcher_foreground.webp"
     },
     {
-        "merged": "com.example.gamerzone.app-release-57:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.gamerzone.app-main-58:/mipmap-xxxhdpi/ic_launcher_round.webp"
+        "merged": "com.example.gamerzone.app-release-60:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.example.gamerzone.app-main-61:/mipmap-anydpi-v26/ic_launcher.xml"
     },
     {
-        "merged": "com.example.gamerzone.app-release-57:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.gamerzone.app-main-58:/mipmap-xxhdpi/ic_launcher_round.webp"
+        "merged": "com.example.gamerzone.app-release-60:/drawable_f1.jpg.flat",
+        "source": "com.example.gamerzone.app-main-61:/drawable/f1.jpg"
     },
     {
-        "merged": "com.example.gamerzone.app-release-57:/drawable_reddead.jpg.flat",
-        "source": "com.example.gamerzone.app-main-58:/drawable/reddead.jpg"
+        "merged": "com.example.gamerzone.app-release-60:/drawable_gtav.webp.flat",
+        "source": "com.example.gamerzone.app-main-61:/drawable/gtav.webp"
     },
     {
-        "merged": "com.example.gamerzone.app-release-57:/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "com.example.gamerzone.app-main-58:/mipmap-anydpi-v26/ic_launcher.xml"
+        "merged": "com.example.gamerzone.app-release-60:/drawable_rocketleague.webp.flat",
+        "source": "com.example.gamerzone.app-main-61:/drawable/rocketleague.webp"
     },
     {
-        "merged": "com.example.gamerzone.app-release-57:/mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.gamerzone.app-main-58:/mipmap-xhdpi/ic_launcher_round.webp"
+        "merged": "com.example.gamerzone.app-release-60:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.gamerzone.app-main-61:/mipmap-hdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.gamerzone.app-release-57:/drawable_cod.jpg.flat",
-        "source": "com.example.gamerzone.app-main-58:/drawable/cod.jpg"
+        "merged": "com.example.gamerzone.app-release-60:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.example.gamerzone.app-main-61:/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
     {
-        "merged": "com.example.gamerzone.app-release-57:/drawable_pes.jpg.flat",
-        "source": "com.example.gamerzone.app-main-58:/drawable/pes.jpg"
+        "merged": "com.example.gamerzone.app-release-60:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.example.gamerzone.app-main-61:/mipmap-hdpi/ic_launcher.webp"
     },
     {
-        "merged": "com.example.gamerzone.app-release-57:/drawable_imagenlogin.png.flat",
-        "source": "com.example.gamerzone.app-main-58:/drawable/imagenlogin.png"
+        "merged": "com.example.gamerzone.app-release-60:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.gamerzone.app-main-61:/mipmap-xhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.gamerzone.app-release-57:/drawable_ic_launcher_foreground.xml.flat",
-        "source": "com.example.gamerzone.app-main-58:/drawable/ic_launcher_foreground.xml"
+        "merged": "com.example.gamerzone.app-release-60:/mipmap-mdpi_ic_launcher_foreground.webp.flat",
+        "source": "com.example.gamerzone.app-main-61:/mipmap-mdpi/ic_launcher_foreground.webp"
     },
     {
-        "merged": "com.example.gamerzone.app-release-57:/xml_backup_rules.xml.flat",
-        "source": "com.example.gamerzone.app-main-58:/xml/backup_rules.xml"
+        "merged": "com.example.gamerzone.app-release-60:/drawable_goat.jpg.flat",
+        "source": "com.example.gamerzone.app-main-61:/drawable/goat.jpg"
     },
     {
-        "merged": "com.example.gamerzone.app-release-57:/drawable_f1.jpg.flat",
-        "source": "com.example.gamerzone.app-main-58:/drawable/f1.jpg"
+        "merged": "com.example.gamerzone.app-release-60:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.gamerzone.app-main-61:/mipmap-mdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.gamerzone.app-release-57:/drawable_goat.jpg.flat",
-        "source": "com.example.gamerzone.app-main-58:/drawable/goat.jpg"
+        "merged": "com.example.gamerzone.app-release-60:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.example.gamerzone.app-main-61:/mipmap-xhdpi/ic_launcher.webp"
     },
     {
-        "merged": "com.example.gamerzone.app-release-57:/mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "com.example.gamerzone.app-main-58:/mipmap-xhdpi/ic_launcher.webp"
+        "merged": "com.example.gamerzone.app-release-60:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "com.example.gamerzone.app-main-61:/drawable/ic_launcher_foreground.xml"
     },
     {
-        "merged": "com.example.gamerzone.app-release-57:/drawable_ic_launcher_background.xml.flat",
-        "source": "com.example.gamerzone.app-main-58:/drawable/ic_launcher_background.xml"
+        "merged": "com.example.gamerzone.app-release-60:/drawable_pes.jpg.flat",
+        "source": "com.example.gamerzone.app-main-61:/drawable/pes.jpg"
     },
     {
-        "merged": "com.example.gamerzone.app-release-57:/mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.gamerzone.app-main-58:/mipmap-mdpi/ic_launcher_round.webp"
+        "merged": "com.example.gamerzone.app-release-60:/drawable_cod.jpg.flat",
+        "source": "com.example.gamerzone.app-main-61:/drawable/cod.jpg"
     },
     {
-        "merged": "com.example.gamerzone.app-release-57:/mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.gamerzone.app-main-58:/mipmap-hdpi/ic_launcher_round.webp"
+        "merged": "com.example.gamerzone.app-release-60:/drawable_reddead.jpg.flat",
+        "source": "com.example.gamerzone.app-main-61:/drawable/reddead.jpg"
     },
     {
-        "merged": "com.example.gamerzone.app-release-57:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "com.example.gamerzone.app-main-58:/mipmap-anydpi-v26/ic_launcher_round.xml"
+        "merged": "com.example.gamerzone.app-release-60:/xml_backup_rules.xml.flat",
+        "source": "com.example.gamerzone.app-main-61:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "com.example.gamerzone.app-release-60:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.example.gamerzone.app-main-61:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.example.gamerzone.app-release-60:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.gamerzone.app-main-61:/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.gamerzone.app-release-60:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.gamerzone.app-main-61:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.gamerzone.app-release-60:/xml_data_extraction_rules.xml.flat",
+        "source": "com.example.gamerzone.app-main-61:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "com.example.gamerzone.app-release-60:/mipmap-hdpi_ic_launcher_foreground.webp.flat",
+        "source": "com.example.gamerzone.app-main-61:/mipmap-hdpi/ic_launcher_foreground.webp"
     }
 ]

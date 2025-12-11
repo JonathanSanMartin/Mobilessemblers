@@ -68,7 +68,7 @@ class JuegosViewModel : ViewModel() {
     fun actualizarJuego(juego: Juegos) {
         viewModelScope.launch {
             try {
-                service.actualizarJuego(juego)
+                service.actualizarJuego(juego.id, juego = "")
                 obtenerJuegos()
             } catch (e: Exception) { }
         }

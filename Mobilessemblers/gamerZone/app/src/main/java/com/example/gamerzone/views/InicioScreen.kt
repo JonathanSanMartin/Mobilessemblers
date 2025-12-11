@@ -4,6 +4,8 @@ import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
+import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.*
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Menu
@@ -71,7 +73,7 @@ fun InicioScreen(
                         }
                     }
                 },
-                modifier = Modifier .systemBarsPadding()
+                modifier = Modifier.systemBarsPadding()
             )
         }
     ) { padding ->
@@ -94,70 +96,96 @@ fun InicioScreen(
             Spacer(modifier = Modifier.height(16.dp))
 
             // LISTADO VISUAL DE JUEGOS
-            LazyColumn(modifier = Modifier.fillMaxSize()) {
-                items(juegos) { juego: Juegos ->
+            Column(
+                modifier = Modifier
+                    .fillMaxSize()
+                    .padding(padding)
+                    .verticalScroll(rememberScrollState())
+            ) {
+                Text(
+                    text = "Listado de juegos",
+                    fontSize = 30.sp,
+                    modifier = Modifier
+                        .padding(16.dp)
+                        .align(Alignment.CenterHorizontally)
+                )
+
+                Spacer(modifier = Modifier.height(16.dp))
+                // LISTADO DE JUEGOS
+                juegos.forEach { juego ->
                     Card(
                         modifier = Modifier
                             .fillMaxWidth()
                             .padding(8.dp),
                         elevation = 4.dp
                     ) {
-                        Row(
-                            verticalAlignment = Alignment.CenterVertically,
-                            modifier = Modifier.padding(8.dp)
-                        ) {
-                            Image(
-                                painter = rememberAsyncImagePainter (juego.imagen),
-                                contentDescription = "Imagen Juego",
-                                modifier = Modifier.size(60.dp)
-                            )
-                            Spacer(modifier = Modifier.width(16.dp))
-                            Column(modifier = Modifier.weight(1f)) {
-                                Text(text = "Nombre: ${juego.nombre}")
-                                Text(text = "Precio: ${juego.precio}")
+                        Column(modifier = Modifier.fillMaxWidth()) {
+
+                            Row(
+                                verticalAlignment = Alignment.CenterVertically,
+                                modifier = Modifier
+                                    .fillMaxWidth()
+                                    .padding(8.dp)
+                            ) {
+                                Image(
+                                    painter = rememberAsyncImagePainter(juego.imagen),
+                                    contentDescription = "Imagen Juego",
+                                    modifier = Modifier.size(60.dp)
+                                )
+
+                                Spacer(modifier = Modifier.width(16.dp))
+
+                                Column(modifier = Modifier.weight(1f)) {
+                                    Text(text = "Nombre: ${juego.nombre}")
+                                    Text(text = "Precio: ${juego.precio}")
+                                }
+
+                                Button(
+                                    onClick = { navController.navigate("editarJuego/${juego.id}") }
+                                ) {
+                                    Text("Editar")
+                                }
                             }
-                            Button(onClick = { navController.navigate("editarJuego/${juego.id}") }) {
-                                Text("Editar")
-                            }
+
                             Divider()
                         }
                     }
                 }
+
+                Spacer(Modifier.height(20.dp))
+
+                // INPUTS PARA AGREGAR
+                OutlinedTextField(
+                    value = state.nombre,
+                    onValueChange = { viewModel.cambiarNombre(it) },
+                    label = { Text("Nombre del juego") },
+                    modifier = Modifier.fillMaxWidth()
+                )
+
+                Spacer(Modifier.height(8.dp))
+
+                OutlinedTextField(
+                    value = state.precio.toString(),
+                    onValueChange = {
+                        val valor = it.toDoubleOrNull() ?: 0.0
+                        viewModel.cambiarPrecio(valor)
+                    },
+                    label = { Text("Precio") },
+                    modifier = Modifier.fillMaxWidth(),
+                    singleLine = true
+                )
+
+                Spacer(Modifier.height(8.dp))
+
+                Button(
+                    onClick = { viewModel.agregarJuego() },
+                    enabled = state.nombre.isNotBlank() && state.precio > 0,
+                    modifier = Modifier.fillMaxWidth()
+                ) {
+                    Text("Guardar juego")
+                }
+                Divider()
             }
-
-            Spacer(Modifier.height(20.dp))
-
-            // INPUTS PARA AGREGAR
-            OutlinedTextField(
-                value = state.nombre,
-                onValueChange = { viewModel.cambiarNombre(it) },
-                label = { Text("Nombre del juego") },
-                modifier = Modifier.fillMaxWidth()
-            )
-
-            Spacer(Modifier.height(8.dp))
-
-            OutlinedTextField(
-                value = state.precio.toString(),
-                onValueChange = {
-                    val valor = it.toDoubleOrNull() ?: 0.0
-                    viewModel.cambiarPrecio(valor)
-                },
-                label = { Text("Precio") },
-                modifier = Modifier.fillMaxWidth(),
-                singleLine = true
-            )
-
-            Spacer(Modifier.height(8.dp))
-
-            Button(
-                onClick = { viewModel.agregarJuego() },
-                enabled = state.nombre.isNotBlank() && state.precio > 0,
-                modifier = Modifier.fillMaxWidth()
-            ) {
-                Text("Guardar juego")
-            }
-            Divider()
         }
     }
 }
