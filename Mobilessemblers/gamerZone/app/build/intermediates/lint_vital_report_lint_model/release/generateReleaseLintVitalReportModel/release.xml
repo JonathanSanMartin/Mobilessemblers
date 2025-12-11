@@ -26,6 +26,6 @@
       applicationId="com.example.gamerzone"
       generatedSourceFolders="build\generated\ap_generated_sources\release\out"
       generatedResourceFolders="build\generated\res\resValues\release"
-      desugaredMethodsFiles="C:\Users\cetecom\.gradle\caches\8.13\transforms\f4cd733d4c5558af68e6f87f1d4ae19c\transformed\D8BackportedDesugaredMethods.txt">
+      desugaredMethodsFiles="C:\Users\rmuji\.gradle\caches\8.13\transforms\f4cd733d4c5558af68e6f87f1d4ae19c\transformed\D8BackportedDesugaredMethods.txt">
   </artifact>
 </variant>
