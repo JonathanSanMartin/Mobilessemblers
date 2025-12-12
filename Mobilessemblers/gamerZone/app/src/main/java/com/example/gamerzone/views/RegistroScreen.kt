@@ -138,7 +138,7 @@ class RegistroScreen(private val navController: NavHostController? = null) {
             TextField(
                 value = nombre,
                 onValueChange = { viewModel.cambiarNombre(it) },
-                label = { Text("Nombre completo:") },
+                label = { Text("Nombre completo") },
                 modifier = Modifier.fillMaxWidth()
             )
             Spacer(modifier = Modifier.height(16.dp))
@@ -165,7 +165,7 @@ class RegistroScreen(private val navController: NavHostController? = null) {
             TextField(
                 value = confirmarContrasena,
                 onValueChange = { viewModel.cambiarConfirmarContrasena(it) },
-                label = { Text("Confirmar la contraseña") },
+                label = { Text("Confirmar contraseña") },
                 modifier = Modifier.fillMaxWidth(),
                 visualTransformation = PasswordVisualTransformation()
             )
@@ -185,7 +185,7 @@ class RegistroScreen(private val navController: NavHostController? = null) {
             Spacer(modifier = Modifier.height(16.dp))
 
             Button(
-                onClick = { viewModel.juegos() },
+                onClick = { juegos() },
                 modifier = Modifier.fillMaxWidth()
             )
             {
@@ -193,7 +193,7 @@ class RegistroScreen(private val navController: NavHostController? = null) {
             }
 
             Button(
-                onClick = { viewModel.login() },
+                onClick = { login() },
                 modifier = Modifier.fillMaxWidth()
             )
             {
@@ -202,11 +202,11 @@ class RegistroScreen(private val navController: NavHostController? = null) {
         }
     }
 
-    private fun RegistroViewModel.juegos() {
+    private fun juegos() {
         navController?.navigate("juegos")
     }
 
-    private fun RegistroViewModel.login() {
+    private fun login() {
         navController?.navigate("login")
 
     }

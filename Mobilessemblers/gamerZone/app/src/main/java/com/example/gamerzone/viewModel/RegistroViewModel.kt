@@ -36,7 +36,6 @@ class RegistroViewModel: ViewModel() {
         RegistroViewModel = RegistroViewModel.copy(confirmarContrasena = confirmarContrasena)
     }
 
-
     fun cambiarTelefono(telefono: Int) {
         RegistroViewModel = RegistroViewModel.copy(telefono = telefono)
     }
@@ -99,7 +98,7 @@ class RegistroViewModel: ViewModel() {
             mensajeAlerta = "El nombre no puede estar vacío."
             textoBtnConfirmacion = "Aceptar"
             mostrarAlerta = true
-        } else if (!RegistroViewModel.nombre.matches(Regex("^[ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzÁÉÍÓÚáéíóúÑñ ]+$"))) {
+        } else if (!RegistroViewModel.nombre.matches(Regex("^[A-Za-zÁÉÍÓÚáéíóúÑñ ]+$"))) {
             tituloAlerta = "Error de validación"
             mensajeAlerta = "El nombre tiene símbolos no permitidos."
             textoBtnConfirmacion = "Aceptar"

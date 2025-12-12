@@ -15,9 +15,9 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
-import androidx.navigation.NavController
+import androidx.navigation.NavHostController
 
-class VibracionScreen(private val navController: NavController? = null) {
+class VibracionScreen(navController: NavHostController) {
 
     @Composable
     fun vibracion(){

@@ -16,10 +16,11 @@ import androidx.navigation.NavHostController
 import com.example.gamerzone.models.Juegos
 import com.example.gamerzone.viewModel.JuegosViewModel
 
+
 class EditarJuegoScreen(
     private val navHostController: NavHostController? = null,
     private val id: Int,
-    viewModel: JuegosViewModel
+    viewModel: JuegosViewModel,
 ) {
 
     @Composable

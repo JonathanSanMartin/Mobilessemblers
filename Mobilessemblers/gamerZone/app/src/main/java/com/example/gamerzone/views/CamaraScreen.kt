@@ -35,6 +35,7 @@ import androidx.compose.material3.Button
 import androidx.compose.material3.Text
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.unit.dp
+import androidx.lifecycle.compose.LocalLifecycleOwner
 import coil.compose.AsyncImage
 import java.io.File
 import java.util.concurrent.Executors
@@ -43,7 +44,7 @@ class CamaraScreen(private val navController: NavController? = null) {
     @Composable
     fun camara() {
         val context = LocalContext.current
-        val lifecycle = LocalLifecycleOwner.current
+        val lifecycle = androidx.lifecycle.compose.LocalLifecycleOwner.current
 
         var permisoCamara by remember {
             mutableStateOf(
@@ -112,11 +113,11 @@ class CamaraScreen(private val navController: NavController? = null) {
                     )
 
                 },
-                    modifier = Modifier.align(Alignment.BottomCenter).padding(16.dp)
+                    modifier = Modifier.align(Alignment.BottomCenter).padding(50.dp)
                 )
 
                 {
-                    Text(text = "Tomar Foto")
+                    Text(text = "Tomar foto")
                 }
             }
         }else{
@@ -132,7 +133,7 @@ class CamaraScreen(private val navController: NavController? = null) {
                         lanzarPermiso.launch(Manifest.permission.CAMERA)
                     }
                 }){
-                    Text(text = "Abrir camara")
+                    Text(text = "Abrir cámara")
                 }
                 Spacer(modifier = Modifier.height(24.dp))
 

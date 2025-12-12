@@ -24,18 +24,7 @@ fun JuegosScreen(
 ) {
     val juegos by remember { derivedStateOf { viewModel.state.juegos } }
 
-    Scaffold(
-        topBar = {
-            TopAppBar(
-                title = { Text("Lista de Juegos") },
-                actions = {
-                    Button(onClick = { navController.navigate("inicio") }) {
-                        Text("Volver")
-                    }
-                }
-            )
-        }
-    ) { padding ->
+    Scaffold() { padding ->
         LazyColumn(
             modifier = Modifier
                 .fillMaxSize()

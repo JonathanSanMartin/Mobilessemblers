@@ -146,7 +146,7 @@ fun InicioScreen(
                             ) {
                                 Image(
                                     painter = rememberAsyncImagePainter(juego.imagen),
-                                    contentDescription = "Imagen Juego",
+                                    contentDescription = "Imagen juego",
                                     modifier = Modifier.size(60.dp)
                                 )
 
